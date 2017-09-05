@@ -1,0 +1,55 @@
+.bodybox{
+    height: auto;
+    width: 760px;
+    margin:0 auto ;
+    padding: 10px;
+    background-color: transparent;
+}
+.headerBox{
+    font-size: 50px;
+    height: 50px;
+    width: 760px;
+}
+.headerBox h1{
+    font-size: 40px;
+    text-align: center;
+}
+.mainBox{
+    width: 760px;
+}
+.h2box{
+    font-size: 20px;
+    color: deepskyblue;
+}
+.mainBox p{
+    font-size: 16px;
+}
+.h2box figure{
+    height: 400px;
+    width: 300px;
+    float: left;
+    margin-top: 5px ;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+#img1box {
+
+    height: 400px;
+    width: 300px;
+}
+#img2 {
+    float: right ;
+    height: 400px;
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+

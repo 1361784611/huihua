@@ -1,0 +1,85 @@
+html,body{
+    width: 100%;
+    font-size: 14px;
+    background-color: aquamarine;
+    color: coral;
+}
+.articlebox{
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 800px;
+    background-color: antiquewhite;
+    border-style: solid;
+    border-color: black;
+    background-image: url("../img/as.jpg" );
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.headerbox h1{
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+.mainbox h2{
+    text-align: left b;
+    font-size: 25px;
+}
+.mainbox{
+
+}
+.mainbox p{
+    text-indent: 2em;
+    line-height: 35px;
+    font-size: 16px;
+}
+.mainbox p em {
+    color: orange;
+    font-weight: bold;
+    font-style: normal;
+}
+.mainbox figure{
+    width: 300px;
+    margin: 10px 20px 0 0;
+}
+.mainbox figure img {
+    width: 100%;
+    float: left;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.mainbox figure img:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+@media screen and (max-width: 840px){
+    .articlebox{
+        width:auto;
+    }
+}
+@media screen and (max-width: 540px){
+    .articlebox{
+        padding:0 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainbox figure {
+        float: none;
+        margin: 10px auto;
+    }
+
+    .headerbox h1, .headerbox.h2 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+
+@media screen and (max-width: 300px){
+    .mainbox figure{
+        width:auto;
+    }
+
+}

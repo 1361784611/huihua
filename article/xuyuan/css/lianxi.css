@@ -1,0 +1,157 @@
+.back{
+    background-image: url("../img/beijing.jpg");
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 4px 2px 1px orange;
+}
+h2{
+    font-size: 30px;
+   color: blue;
+}
+h3{
+    font-size: 25px;
+    color: blueviolet;
+}
+.wenzhang{
+    width:1000px;
+    height: auto;
+    margin:0 auto;
+    text-indent: 2em;;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.one{
+    width: 400px;
+    height: auto;
+    float:left ;
+    margin-right: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.two{
+    width: 400px;
+    height: auto;
+    float: right;
+    margin-left: 10px;
+    margin-top:7px;
+    margin-bottom: 7px;
+}
+.three{
+    width: 600px;
+    height: auto;
+
+}
+a{
+    font-size: 20px;
+}
+@media screen and (max-width: 1400px){
+    .wenzhang{
+        width:auto ;
+        padding:0 5px 0 5px;
+    }
+}
+@media screen and (max-width:710px){
+    .four{
+        width:605px;
+        height: auto;
+    }
+}
+@media screen and (max-width:630px){
+    .one{
+        float: none;
+        padding: auto 10px auto 10px;
+        width: 500px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .two{
+        float: none;
+        width: 500px;
+        height: auto;
+    }
+    .three{
+        width: 500px;
+        height: auto;
+    }
+    .four{
+        width: 500px;
+        height: auto;
+    }
+}
+@media screen and (max-width:530px) {
+    .one {
+        float: none;
+        padding: auto 10px auto 10px;
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .two {
+        float: none;
+        width: 400px;
+        height: auto;
+    }
+
+    .three {
+        width: 400px;
+        height: auto;
+    }
+
+    .four {
+        width: 400px;
+        height: auto;
+    }
+}
+@media screen and (max-width:430px) {
+    .one {
+        float: none;
+        padding: auto 10px auto 10px;
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .two {
+        float: none;
+        width: 300px;
+        height: auto;
+    }
+
+    .three {
+        width: 300px;
+        height: auto;
+    }
+
+    .four {
+        width: 300px;
+        height: auto;
+    }
+}
+@media screen and (max-width:330px) {
+    .one {
+        float: none;
+        padding: auto 10px auto 10px;
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .two {
+        float: none;
+        width: 200px;
+        height: auto;
+    }
+
+    .three {
+        width:200px;
+        height: auto;
+    }
+
+    .four {
+        width: 200px;
+        height: auto;
+    }
+}
