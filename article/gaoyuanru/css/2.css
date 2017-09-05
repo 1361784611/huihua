@@ -1,0 +1,62 @@
+html, body{
+    width: 100%;
+    font-size: 14px;
+    background-color: lightpink;
+}
+.clearfix{
+    display: block;
+    content: '';
+    clear: both;
+}
+.articlebox{
+    margin: 0 auto;
+    padding: 0 20px;
+    width:800px ;
+    background-color: lightgoldenrodyellow;
+}
+.headerbox{
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
+}
+main h3{
+    font-size: 20px;
+    color: lightsalmon;
+}
+nav{
+    height: 100px;
+}
+nav img{
+    width: 100%;
+}
+nav ul li{
+    list-style: none;
+    float: left;
+    font-size: 14px;
+}
+nav ul li a{
+    padding: 0 5px;
+}
+nav span{
+    float: left;
+    padding:0 50px 0 50px;
+    border-bottom: 1px dashed;
+    border-bottom-color: black;
+    font-size: 12px;
+}
+div h2{
+    text-align: left;
+    font-size: 26px;
+    color: hotpink;
+    float: left;
+}
+.h1box{
+    padding: 80px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    color: lightseagreen;
+}
+figure img{
+    width: 100%;
+}

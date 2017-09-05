@@ -1,0 +1,76 @@
+html, body {
+    width: 100%;
+    font-size: 20px;
+    background: -webkit-linear-gradient(lightblue,wheat, #ffdeea,palegreen);
+}
+.clearfix:after{
+   display:block;
+    content:'';
+    clear:both;
+}
+.headerBox{
+    font-size: 30px;
+    text-align: center;
+    color:blueviolet;
+}
+.headerBox h1{
+    font-size: 38px;
+    text-align: center;
+}
+.articleBox {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 760px;
+}
+.mainBox{
+
+}
+.articleBox h2{
+    line-height: 50px;
+    text-align: left;
+    font-size: 20px;
+}
+.mainBox p {
+    text-indent: 2em;
+    line-height: 25px;
+}
+
+.mainBox p em {
+    color: orange;
+    text-align: left;
+    font-weight: bold;
+    line-height: 55px;
+}
+.mainBox figure {
+    float: left;
+    margin: 0 15px 0 0;
+    width: 250px;
+}
+.mainBox figure img {
+    width: 100%;
+}
+@media screen  and (max-width:800px){
+    .articleBox{
+        width:auto;
+    }
+}
+@media screen  and (max-width:540px){
+    .articleBox{
+        padding:0 8px;
+    }
+}
+@media screen  and (max-width:480px){
+    .mainBox figure{
+        float:none;
+        margin:10px auto;}
+        .headerBox h1,.hearBox h2{
+        text-overflow: ellipsis;
+        white-space:nowrap;
+        overflow:hidden;
+    }
+    }
+@media screen and (max-width:300px){
+    .mainBox figure{
+        width:auto;
+    }
+}
