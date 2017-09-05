@@ -1,0 +1,146 @@
+.clearfix{
+    display: block;
+    content: '';
+    clear: both;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/b1.jpg") ;
+}
+.articleBox{
+    width: 850px;
+    height: 3200px;
+    margin: -10px auto;
+    background-color: azure;
+}
+ .imgBox{
+     background: url("../img/main1.PNG");
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     height: 250px;
+    margin: 10px 10px;
+    text-align: center;
+    transform: skew(-25deg) scale(0.9);
+
+}
+.left{
+    width: 300px;
+    float: left;
+    background-color: beige;
+    margin: 30px auto auto 20px;
+}
+.left .leftBox1 h3{
+    font-family:华文楷体;
+    color: cadetblue;
+}
+.left .leftBox1 figcaption{
+    font-family: 宋体;
+    color: darksalmon;
+    text-align: center;
+}
+
+.left .leftBox2{
+    width: 150px;
+    margin: 40px auto auto 38px;
+}
+.left .leftBox2 ul li{
+    display: block;
+    font-family:华文楷体;
+    font-size: 20px;
+}
+.mainBox{
+    float: right;
+    margin: 0 10px auto 10px;
+ }
+
+ .mainBox img{
+     width: auto;
+     margin: 0 50px auto 10px;
+ }
+
+.mainBox h2{
+    font-family: 华文行楷;
+    color: #ffa0a0;
+    text-align:center;
+    padding-top: 10px;
+}
+.mainBox p{
+    text-indent: 3em;
+    text-align: center;
+}
+.left .todayBox{
+    width: 250px;
+    text-align: center;
+    margin: 60px auto 30px 30px;
+}
+.left .todayBox h3{
+    text-align: left;
+    font-family: 楷体;
+}
+.left .todayBox .top .figcaption {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+        .articleBox, .imgBox, .left, .mainBox {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .articleBox   {
+        padding: 0 8px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .imgBox {
+        float: none;
+        margin: 10px auto;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+    @media screen and (max-width: 828px) {
+        .left {
+            float: left;
+            margin: 10px auto;
+        }
+    }
+        @media screen and (max-width: 438px) {
+            .mainBox {
+                float: none;
+                margin: 10px auto;
+
+            }
+        }
+       .articleBox .imgBox,.left,.mainBox {
+        text-overflow: ellipsis; /*ellipsis:超出一行的文字自动裁切,并且以三个省略号展示 clip:超出一行自动截取,没有省略号*/
+        white-space: nowrap; /*强制超出后不换行*/
+        overflow: hidden; /*溢出的内容隐藏*/
+        /*三句话一句话都不能少：超出一行的内容自动裁切，以省略号代替*/
+    }
+
+@media screen and (max-width: 300px) {
+    .mainBox figure, .mainBox aside {
+        width: auto;
+    }
+
+    .mainBox aside {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+

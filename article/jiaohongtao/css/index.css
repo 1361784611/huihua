@@ -1,0 +1,103 @@
+html, body {
+    width: 100%;
+    background: #F4F4F4;
+    color: #555;
+    font-size: 14px;
+}
+
+.article {
+    margin: 0 auto;
+    padding: 20px;
+    width: 850px;
+    background: rgba(202, 248, 255, 0.27);
+}
+
+/*--HEADER--*/
+.header {
+    border-bottom: 1px dashed #DDD;
+}
+
+.header h1 {
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.header h2 {
+    line-height: 50px;
+    text-align: center;
+    color: orange;
+    font-size: 18px;
+}
+
+/*--CONTENT--*/
+.section {
+    margin-top: 10px;
+}
+
+.section h3 {
+    line-height: 35px;
+    color: green;
+    font-size: 16px;
+}
+.section h4{
+    line-height: 35px;
+    font-size: 14px;
+    color: tan;
+}
+
+.section p {
+    margin-bottom: 0px;
+    line-height: 35px;
+}
+
+.section .figure {
+    float: left;
+    margin: 10px 20px 0 0;
+    width: 300px;
+}
+
+.section .figure img {
+    width: 100%;
+}
+
+.section .figure .figcaption {
+    line-height: 20px;
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.section strong {
+    color: orange;
+}
+
+.section .aside {
+    float: right;
+    margin: 10px 0 0 20px;
+    width: 300px;
+}
+
+.section .aside img {
+    width: 100%;
+}
+
+/*--响应式布局开发--*/
+@media all and (max-width: 800px) {
+    .article {
+        padding: 5px;
+        width: auto;
+    }
+
+    .section .figure {
+        float: none;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .section .aside {
+        float: none;
+        margin: 10px 0;
+        width: 100%;
+    }
+}

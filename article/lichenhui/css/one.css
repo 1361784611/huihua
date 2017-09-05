@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: lightskyblue;
+}
+
+#box {
+    width: 738px;
+    height: 430px;
+    position: relative;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+#list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#list li {
+    list-style: none;
+    float: left;
+}
+
+#list li img{
+    width:738px;
+    height:430px;
+}
+
+#tab {
+    position: absolute;
+    bottom: 15px;
+    width: 65px;
+    height: 13px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0;
+    left: 50%;
+    margin-left: -33px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tab span {
+    width: 9px;
+    height: 0;
+    padding-top: 9px;
+    background: red;
+    border-radius: 50%;
+    float: left;
+    margin: 2px;
+    cursor: pointer;
+}
+
+#tab span.on {
+    background: yellow;
+}
+
+#btn {
+    display: none;
+}
+
+#box:hover #btn {
+    display: block;
+}
+
+#btn span {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#btn span:nth-child(2) {
+    right: 0;
+}
+
+.article {
+    margin: 0 auto;
+    padding: 20px;
+    width: 720px;
+    background: rgba(255,255,255,0.7);
+    border:1px seashell solid;
+}
+.header {
+    border-bottom: 1px dashed #DDD;
+}
+
+.header h1 {
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.header h2 {
+    line-height: 50px;
+    text-align: center;
+    color: orange;
+    font-size: 18px;
+}
+.content {
+    margin-top: 10px;
+}
+
+.content h3 {
+    line-height: 35px;
+    color: green;
+    font-size: 16px;
+}
+
+.content p {
+    margin-bottom: 10px;
+    line-height: 35px;
+    text-indent:1em;
+    opacity:0;
+}
+
+.content .figure {
+    float: left;
+    margin: 10px 20px 0 0;
+    width: 300px;
+}
+
+.content .figure img {
+    width: 100%;
+}
+
+.content .figure .figcaption {
+    line-height: 20px;
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.content strong {
+    color: orange;
+}
+
+.content .aside {
+    float: right;
+    margin: 10px 0 0 20px;
+    width: 300px;
+}
+
+.content .aside img {
+    width: 100%;
+}
+
+#return{
+    width:50px;
+    height:50px;
+    background:#333;
+    line-height:50px;
+    text-align:center;
+    color:#ddd;
+    position:fixed;
+    bottom:50px;
+    right:350px;
+    font-size:10px;
+    cursor:pointer;
+}
+
+@media all and (max-width: 800px) {
+    .article {
+        padding: 5px;
+        width: auto;
+    }
+
+    .content .figure {
+        float: none;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .content .aside {
+        float: none;
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+

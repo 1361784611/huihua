@@ -1,0 +1,138 @@
+html, body {
+    width: 100%;
+    font-size: 16px;
+    background: url("../img/cangyuan/beijing.jpg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.articleBox {
+    width: 790px;
+    padding: 0 20px;
+    margin: 0 auto;
+    background-color: lightcyan;
+}
+
+.headerBox {
+    border-bottom: 1px dashed #ff44ee;
+}
+
+.headerBox h1 {
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    /*font-weight: bold;*/
+    font-family: "华文行楷";
+}
+
+.headerBox h2 {
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    /*font-weight: bold;*/
+    font-family: "华文细黑";
+    color: #69d1ff;
+}
+
+.navBox {
+    text-align: left;
+    text-indent: 2em;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.navBox ul li a {
+    color: lightseagreen;
+}
+
+#mulu {
+    text-align: center;
+}
+
+.change:hover {
+    font-size: 25px;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+.audioBox{
+    display: none;
+}
+
+.mainBox {
+
+}
+
+.mainBox h3 {
+    line-height: 40px;
+    font-size: 18px;
+    font-family: "华文仿宋";
+    color: #ff721a;
+}
+
+.mainBox p {
+    text-indent: 2em;
+    line-height: 35px;
+    font-family: "楷体";
+}
+
+.mainBox figure {
+    font-weight: 300px;
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+.mainBox figure img {
+    width: 100%;
+}
+
+.mainBox figcaption {
+    font-size: 14px;
+    color: rgba(182, 141, 252, 0.91);
+    line-height: 25px;
+}
+
+.mainBox aside {
+    float: right;
+    margin: 0 0 0 15px;
+    width: 300px;
+}
+
+.mainBox aside img {
+    width: 100%;
+}
+
+/*适配手机*/
+@media screen and (max-width: 800px){
+    .articleBox{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .articleBox{
+        padding: 0 8px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .mainBox figure, .mainBox aside{
+        float: none;
+        margin: 10px auto;
+    }
+    .headerBox h1, .headerBox h2{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .mainBox figure, .mainBox aside {
+        width: auto;
+    }
+
+    .mainBox aside {
+        display: none;
+    }
+}
