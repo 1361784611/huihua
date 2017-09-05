@@ -1,0 +1,99 @@
+html,body{
+    width:100%;
+    background-color:lightcoral ;
+}
+.box{
+    margin:0 auto;
+    width:700px;
+    padding:20px;
+    background-color: ivory;
+    text-indent: 2em;
+    border:1px solid transparent;
+}
+.top {
+    border-bottom: 1px dashed #DDD;
+}
+.top h1{
+    text-align: center;
+    font-size: 25px;
+    color:red;
+    line-height: 50px;
+}
+.top p{
+    line-height: 35px;
+    font-size: 18px;
+}
+.top img{
+    float:left;
+    width:400px;
+    height:400px;
+    margin:10px 20px 0 0;
+}
+
+.content{
+    line-height: 35px;
+}
+.content img{
+    width:300px;
+    height:300px;
+    float:left;
+    margin:10px 20px 0 0;
+}
+.content .picture{
+    float:right;
+    margin:10px 0 0 20px;
+}
+.content h2{
+    text-indent: 0em;
+    font-size: 22px;
+    line-height: 35px;
+}
+.content h3{
+    text-indent: 0em;
+    font-size: 20px;
+    line-height: 35px;
+}
+.content h4{
+    color:green ;
+    font-size: 19px;
+    line-height: 35px;
+}
+.content p{
+    text-indent:2em;
+    font-size: 18px;
+    line-height: 35px;
+}
+.content p strong{
+    text-indent:2em;
+    font-size: 18px;
+    line-height: 35px;
+    color:orange;
+}
+/*适配手机*/
+@media screen and (max-width:800px){
+    .box{
+        width:auto;
+    }
+}
+@media screen and (max-width:550px){
+    .box{
+        padding:0 8px;
+    }
+}
+@media screen and (max-width:570px) {
+    .top figure, .top aside{
+        float:none;
+        margin:10px auto;
+    }
+    .top h1{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow:hidden;
+    }
+}
+@media screen and (max-width:380px) {
+    .box img{
+        width:auto;
+        display:none;
+    }
+}

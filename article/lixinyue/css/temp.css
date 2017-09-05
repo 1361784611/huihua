@@ -1,0 +1,121 @@
+html,body{
+    width: 100%;
+    font-size: 14px;
+    background-color: #e3e3e3;
+}
+
+.articleBox {
+    color: #fff;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 900px;
+    background-image:url("../img/0.jpg") ;
+    background-size: 100% 100%;
+}
+
+.headerBox {
+    border-bottom: 2px dashed #e3e3e3;
+}
+
+.headerBox h1{
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: black ;
+}
+
+.mainBox p {
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+.aBox {
+    float: left ;
+    margin: 15px;
+    padding:0  5px 20px 0;
+}
+
+.aBox img {
+    width: 270px;
+    height: 170px;
+}
+
+.bBox{
+    float: right ;
+    margin: 0 15px 0 15px;
+    padding: 0 15px 15px 10px;
+}
+
+.bBox img{
+    width: 251px;
+    height:150px;
+    padding:0 15px 15px 10px;
+}
+
+.cBox {
+    float: left;
+    margin: 15px;
+    padding: 10px;
+}
+
+.cBox img{
+    width: 300px;
+    height: 200px;
+}
+
+.dBox {
+    float: right;
+    margin: 15px;
+}
+
+.dBox img {
+    width: 270px;
+    height: 170px;
+}
+
+.eBox {
+    float: left ;
+    margin: 15px;
+}
+
+.eBox img{
+    width: 300px;
+    height: 200px;
+}
+
+audio {
+    float: right ;
+}
+
+@media screen and (max-width: 900px) {
+    .articleBox {
+        width: auto ;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .articleBox {
+        padding: 0 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aBox,.bBox,.cBox,.dBox,.eBox{
+        float: none;
+        margin: 5px auto;
+    }
+    .headerBox h1{
+        text-overflow: ellipsis ;
+        white-space: nowrap ;
+        overflow: hidden ;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .aBox,.bBox,.cBox,.dBox,.eBox{
+        width: auto;
+    }
+}
+
+
