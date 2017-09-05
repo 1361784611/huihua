@@ -1,0 +1,161 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: url("../img/3.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.articlebox {
+    margin: 0 auto;
+    width: 760px;
+}
+
+.headerbox {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed lightgoldenrodyellow;
+}
+
+.headerbox h1 {
+    margin-bottom: 20px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: brown;
+}
+
+.mainbox {
+    margin: 0 20px 10px 20px;
+}
+
+.mainbox p {
+    margin-right: 30px;
+    font-size: 20px;
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+.mainbox h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+
+.mainbox .content {
+
+}
+
+.mainbox .figure {
+    float: left;
+    margin: 5px 20px 0 0;
+    width: auto;
+}
+
+.mainbox .figure img {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.mainbox .figure img:hover {
+    transform: rotate(360deg);
+    transition: all 1s ease-in-out 0.1s;
+}
+
+.imgBox {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.imgBox ul {
+
+}
+
+.imgBox ul .clearfix {
+    transform: scale(1.2);
+}
+
+.imgBox ul li {
+    float: left;
+    width: 200px;
+    height: 135px;
+    margin: 10px 0 0 10px;
+    position: relative;
+}
+
+.imgBox ul li a {
+    display: block;
+    height: 100%;
+}
+
+.imgBox ul li a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.imgBox ul li a img:hover {
+    transform: scale(1.5);
+    transition: all 0.2s linear 0.5s;
+}
+
+@media screen and (max-width: 760px ) {
+    .articlebox {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 700px ) {
+    .imgBox ul {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .imgBox ul li {
+        float: none;
+        width: auto;
+        height: auto;
+    }
+
+    .mainbox figure {
+        width: auto;
+        float: none;
+    }
+
+@media screen and(max-width: 540px ) {
+    .articlebox {
+        padding: 0 2px;
+    }
+}
+
+@media screen and (max-width: 480px ) {
+    .mainbox figure {
+        float: none;
+        margin: 10px auto;
+    }
+
+    .headerbox h1, .headerbox h2 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+    @media screen and (max-width: 340px ) {
+        .mainbox figure {
+            width: auto;
+            float: none;
+        }
+    }
+
+
+
+

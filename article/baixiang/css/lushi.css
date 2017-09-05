@@ -1,0 +1,143 @@
+html, body {
+    width: 100%; /*这是为了把页面填满，别把这写成像素了*/
+    background: #F4F4F4;
+    font-size: 14px;
+    color: #555555;
+
+}
+
+.articlebox {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.articlebox header {
+    border-bottom: 1px dashed darkblue;
+}
+
+.headerbox img {
+    width: 100%;
+}
+
+.articlebox header h1 {
+    color: orange;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.articlebox header h2 {
+    color: cornflowerblue;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.mainbox {
+    margin-top: 10px;
+
+}
+
+.mainbox h3 {
+    font-size: 16px;
+    color: lightseagreen;
+    line-height: 30px;
+}
+
+.mainbox h4 {
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+.fashi, .qishi, .shushi, .mushi, .qianxingzhe {
+    width: 270px;;
+    float: left;
+    margin: 10px 20px 0 0;
+}
+
+.lieren, .zhanshi, .saman, .deluyi {
+    width: 270px;;
+    float: right;
+    margin: 10px 0 0 20px;
+}
+
+.fashi div, .qishi div, .lieren div, .zhanshi div, .shushi div, .mushi div, .qianxingzhe div, .deluyi div, .saman div {
+    overflow: hidden;
+    width: 100%;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.fashi img:hover, .qishi img:hover, .shushi img:hover, .mushi img:hover, .deluyi img:hover {
+    transform: scale(1.5);
+}
+
+.fashi, .qishi, .shushi, .mushi, .deluyi figcaption {
+    line-height: 20px;
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.lieren img:hover, .zhanshi img:hover, .saman img:hover, .qianxingzhe img:hover {
+
+    transform: scale(1.5);
+}
+
+.mainbox p {
+    margin-bottom: 10px;
+    line-height: 35px;
+}
+
+@media screen and (max-width: 800px) {
+    .articlebox {
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .articlebox {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainbox figure {
+        float: none;
+        margin: 10px auto;
+    }
+
+    .headerbox h1, .headerbox h2 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 268px) {
+    .mainbox figure {
+        width: auto;
+    }
+}
+
+
+
+
+
+
+
+
+

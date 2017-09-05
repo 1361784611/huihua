@@ -1,0 +1,40 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img2/66.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.box {
+    margin: 40px auto;
+    padding: 20px;
+    width: 900px;
+    height: 800px;
+    border: 5px solid #a1bdb5;
+    overflow: auto;
+    background-color: aliceblue;
+
+}
+
+.headBox h1 {
+    font-family: Andalus;
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.figure {
+    float: right;
+}
+
+.clear p{
+    font-size:20px;
+    margin: 5px;
+}
+.box main h2{
+    font-size:25px;
+    font-weight: bold;
+}

@@ -1,0 +1,219 @@
+html, body {
+    width: 100%;
+    background: #F4F4F4;
+    color: #555;
+    font-size: 14px;
+}
+
+article {
+    margin: 0 auto;
+    padding: 10px;
+    width: 750px;
+    background-image: url("../img/bei.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.header {
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    color: blue;
+    font-weight: normal;
+}
+
+.nav ul {
+    padding-left: 85px;
+    margin: 0 auto;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 auto;
+}
+
+.nav ul li a {
+    padding: 0 10px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.main {
+
+    color: black;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.main h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.main p {
+    text-indent: 2em;
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(109, 112, 128);
+    line-height: normal;
+}
+
+.main p strong {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.main ul {
+
+}
+
+.main ul li {
+    float: left;
+    padding: 10px;
+}
+
+.main ul li img {
+    display: block;
+    height: 230px;
+    width: 230px;
+    padding: 0 auto;
+
+}
+
+.main ul li span {
+    display: block;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.main ul li img:hover {
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+@media screen and (max-width: 780px) {
+    article {
+        width: auto;
+    }
+
+    .main ul {
+        width: 500px;
+        margin: 10px auto 10px auto;
+    }
+}
+
+@media screen and (max-width: 706px) {
+    .main {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .main ul {
+        width: auto;
+    }
+
+    .main ul li {
+        float: none;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 406px) {
+        .header h1 {
+            font-size: 25px;
+        }
+        .nav ul {
+            margin-left: -20px;
+        }
+        .nav ul li a {
+            font-size: 20px;
+        }
+
+        .main p {
+            font-size: 16px;
+        }
+
+        .main h3 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .nav ul {
+        margin-left: -30px;
+    }
+
+    .nav ul li a {
+        font-size: 16px;
+    }
+
+    .main p {
+        font-size: 10px;
+    }
+
+    .main h3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .nav ul {
+        margin-left: -45px;
+    }
+
+    .nav ul li a {
+        font-size: 15px;
+    }
+
+    .main p {
+        font-size: 10px;
+    }
+
+    .main ul li {
+        float: none;
+        width: auto;
+    }
+
+    .main ul li img {
+        width: 190px;
+        height: 200px;
+    }
+
+    .main h3 {
+        font-size: 13px;
+    }
+}
+
+/*@media screen and (max-width: 227px) {
+    .header h1 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}*/
+
