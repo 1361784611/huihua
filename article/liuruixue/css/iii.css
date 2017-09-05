@@ -1,0 +1,20 @@
+
+#div1{
+    margin: 30px auto;
+    width:1000px;
+    height:9000px;
+    background-color: beige;
+    border:9px;
+    border-color: bisque;
+
+}
+
+#div1 h1,h2{
+    text-align: center;
+}
+#div2{
+    margin:10px auto;
+    width:600px;
+    height:100px;
+    padding:auto;
+}

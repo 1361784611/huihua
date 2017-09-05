@@ -1,0 +1,77 @@
+html,body {
+    width: 100%;
+    font-size: 14px;
+    background-color: #e3e3e3;
+}
+
+.articleBox{
+    margin: 0 auto;
+    padding:0 20px;
+    width: 800px;
+    background:-webkit-linear-gradient(top left,lightyellow, #bbe3e6,pink,lightcyan) ;
+}
+.headerBox{
+    border-bottom: 5px dashed #b2dba1;
+}
+.headerBox h1 {
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+.headerBox h2{
+    line-height: 50px;
+    text-align: right;
+    font-size: 16px;
+    color: #398439;
+    font-weight: normal;
+}
+.mainBox h3{
+    line-height: 50px;
+    font-size: 16px;
+    color: #985f0d;
+}
+.mainBox p{
+    text-indent: 2em;
+    line-height: 30px;
+}
+.mainBox figure {
+    float: right;
+    margin: 0 0 0 15px;
+    width: 300px;
+}
+.mainBox figure img{
+    width:100%;
+}
+.mainBox p em {
+    color: #4cae4c;
+    font-weight: bold;
+    font-style: normal;
+}
+.articleBox{
+    opacity: 0.9;
+}
+@media screen and (max-width: 800px) {
+    .articleBox{
+        width: auto;
+    }
+}
+@media screen and (max-width: 540px){
+    .articleBox{
+        padding: 0 8px;
+    }
+}
+@media screen and (max-width: 480px){
+    .mainBox figure{
+        float: none;
+        margin: 10px auto;}
+    .headerBox h1,.headerBox h2{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 300px){
+    .mainBox figure{
+        width: auto;
+    }
+}

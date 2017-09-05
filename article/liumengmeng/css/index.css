@@ -1,0 +1,281 @@
+html, body {
+    width: 100%;
+    font-size: 12px;
+}
+
+/*文章主体样式*/
+.articleBox {
+    margin: 0 auto; /*整体居中*/
+
+}
+
+.clearFix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+/*头部区域*/
+.headerBox {
+    position: relative; /*relative：定位相对于自己之前的位置定位*/
+    padding-top: 20px;
+    background: url("../img/background.jpg") no-repeat center top; /*给头部设置背景图片*/
+    background-size: 100%; /*背景图片大小和容器宽相同*/
+    height: 500px; /*背景图片高为500px*/
+}
+
+/*头部文字H1*/
+.headerBox h1 {
+    line-height: 50px;
+    text-align: center; /*文字居中*/
+    font-size: 35px;
+    color: cornflowerblue; /*字体颜色*/
+}
+
+/*头部导航区域 由无序列表UL组成*/
+.headerBox nav {
+    width: 720px;
+    padding: 20px;
+    background-color: lightblue;
+    height: 20px;
+    margin: 5px auto; /*上下5px 左右居中*/
+}
+
+/*头部导航区域 由无序列表UL组成*/
+.headerBox ul {
+    margin: 0px auto;
+}
+
+.headerBox ul li {
+    float: left;
+    padding: 0px 20px;
+    margin: 0 25px;
+    font-weight: bolder;
+}
+
+/*头部图片区域*/
+.headerBox img {
+    position: absolute; /*定位：相对于父级参照物来定位*/
+    left: 50%; /**/
+    margin-left: -380px; /*外边距*/
+    width: 730px;
+    padding: 15px 15px;
+    background-color: cornflowerblue;
+}
+
+/*主体区域分为两个 普通区域section,section1*/
+.mainBox {
+    margin: 50px auto;
+    width: 760px;
+}
+
+/*主体左区域：section*/
+.sectionBox {
+    padding: 10px;
+    width: 360px;
+    float: left;
+}
+
+.sectionBox h2 {
+    font-size: 20px;
+    color: cornflowerblue;
+}
+
+.sectionBox p {
+    margin-bottom: 5px;
+}
+
+.sectionBox figure {
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+    width: 100%;
+    margin: auto;
+
+}
+
+.sectionBox img {
+    float: left;
+    width: 170px;
+    padding: 0px 10px 5px 0px;
+}
+
+.sectionBox figcaption {
+
+}
+
+#img1 {
+    width: 40px;
+    padding: 0px 10px 5px 0px;
+}
+
+/*主体左区域：section1由一个无序列表组成*/
+.sectionBox1 {
+    padding: 10px;
+    width: 360px;
+    float: left;
+}
+
+.sectionBox1 h2 {
+    font-size: 20px;
+    color: cornflowerblue;
+}
+
+.sectionBox1 ul {
+
+}
+
+.sectionBox1 li {
+    width: 100%;
+}
+
+.sectionBox1 figure {
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.sectionBox1 figure img {
+    width: 170px;
+    float: left;
+    padding: 0px 10px 5px 0px;
+}
+
+.sectionBox1 figcaption {
+}
+
+#li1 {
+    border-bottom: 1px solid #444;
+}
+
+
+
+/*响应式布局1:页面小于780px时，articled>body 经行修改*/
+
+@media screen and (max-width: 780px) {
+    .articleBox {
+        width: auto;
+    }
+
+    .headerBox{
+        height: 520px;
+    }
+    .headerBox img {
+        margin-left: -47%;
+        width: 92%;
+        padding: 1%;
+    }
+
+    .headerBox nav {
+        width: 100%;
+        padding: 20px 0;
+        background: none;
+        height: auto;
+        background-color: lightblue;
+    }
+
+    .headerBox ul li {
+        width: 25%;
+        line-height: 20px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-size: 12px;
+
+    }
+
+    .headerBox ul li a {
+        color:rgb(85, 26, 139);
+    }
+
+    .mainBox{
+        width: auto;
+        padding:10px 20%;
+        margin: 0px;
+
+    }
+
+    .sectionBox1 {
+        float: none;
+    }
+}
+
+
+
+/*调整页面*/
+@media screen and (max-width: 720px){
+    .headerBox{
+        height: 490px;
+    }
+}
+@media screen and (max-width: 680px){
+    .headerBox{
+        height: 470px;
+    }
+}
+@media screen and (max-width: 660px){
+    .headerBox{
+        height: 450px;
+    }
+}
+@media screen and (max-width: 630px){
+    .headerBox{
+        height: 430px;
+    }
+}
+@media screen and (max-width: 570px){
+    .headerBox{
+        height: 350px;
+    }
+}
+@media screen and (max-width: 500px){
+    .headerBox{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 400px){
+    .headerBox{
+        height: 210px;
+    }
+}
+@media screen and (max-width: 380px){
+    .headerBox{
+        height: 150px;
+    }
+}
+
+
+
+
+
+
+/*响应式布局1:页面小于580px时，经行修改*/
+@media screen and (max-width: 580px) {
+    .headerBox nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px ){
+    .mainBox{
+        padding:10px 12%;
+    }
+
+}
+
+@media screen and (max-width:490px ){
+    .mainBox{
+        padding:10px 7%;
+    }
+}
+
+@media screen and (max-width:433px ){
+    .mainBox{
+        padding: 0px;
+        overflow: hidden;
+    }
+    .headerBox{
+        height:270px ;
+    }
+}
+
+
+

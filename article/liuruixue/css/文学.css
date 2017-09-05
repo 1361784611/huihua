@@ -1,0 +1,157 @@
+body,head{
+    font-family: 楷体;
+}
+
+#div1{
+    background-color: beige;
+    margin: 10px auto;
+    width: 1000px;
+    height:200px;
+}
+#div1 h1{
+    text-align: center;
+    font-family: 楷体;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+
+
+#div1  #toubudiv{
+     margin:auto;
+    height:35px;
+    width:600px;
+    background-color: black;
+ }
+
+#div1 #toubudiv input{
+    display: block;
+    width: 446px;
+    height:33px;
+    line-height: 33px;
+    boder-top:1px;
+    background-color: gainsboro;
+    float: left;
+}
+
+
+#div1 #toubudiv a{
+      display: block;
+      float: right;
+      width:150px;
+      height:35px;
+
+      text-align: center;
+      font-size: 28px;
+      font-family: 黑体;
+      background-color: aqua;
+      text-decoration: none;
+
+  }
+#div2{
+    background-color: beige;
+    margin: 0 auto;
+    width: 1000px;
+    height:2000px;
+
+}
+
+#div3{
+    background-color: darksalmon;
+    float: left;
+    width: 600px;
+    height:750px;
+}
+
+#div3 font{
+    font-size: 30px;
+}
+
+#div3 figure{
+    margin-left:10px;
+
+}
+
+#div3 figure img{
+    float:left;
+    margin-right: 10px;
+    width:150px;
+    height:100px;
+}
+#div2 figure figcaption{
+
+
+    margin-left: 5px;
+}
+#div4{
+    background-color: darksalmon;
+    float:right;
+
+    width: 390px;
+    height:750px;
+}
+
+
+#div4 h2{
+    margin-left:2px;
+    text-align: center;
+}
+#box1{
+    width:385px;
+    height:130px;
+
+    margin: auto;
+}
+#box1 a{
+    text-align: center;
+}
+#box1 img{
+    display: block;
+
+}
+#box1 #box2{
+    float:left;
+    margin-left: 5px;
+    margin-right: 20px;
+
+}
+#box1 #box3{
+     float:left;
+    margin-right: 20px;
+
+ }
+
+#box1 #box4{
+    float:left;
+    margin-right: 20px;
+
+}
+
+#box1 #box5{
+    float:right;
+    margin-right:5px;
+
+}
+.p1{
+    margin-left: 5px;
+}
+#t1{
+    border-bottom: 2px dashed;
+
+}
+#t2{
+    border-bottom: 2px dashed;
+
+    background-color: aliceblue;
+    height:20px;
+    width:
+
+
+}
+
+.p2{
+
+    width: 1000px;
+    height:500px;
+    background-color: bisque;
+}

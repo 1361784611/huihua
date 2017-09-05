@@ -1,0 +1,92 @@
+body{
+    background-image: url("../img/timg.jpg");
+    background-size: 100%;
+
+}
+
+nav {
+    width: 100%;
+    margin: 10px auto auto 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    float: right;
+    margin: auto auto auto 10px;
+}
+
+nav ul li {
+    list-style-type: none;
+    float: left;
+    margin: auto 5px;
+}
+
+nav ul li a {
+    color: white;
+    margin: auto 8px;
+}
+
+img{
+    display: block;
+    margin:0 auto;
+}
+#div1 {
+
+    height: 120px;
+    width: 200px;
+    margin: 10px auto auto auto;
+}
+
+#div1 img {
+    display: block;
+    margin: 10px auto auto auto;
+    height: 100px;
+    width: 200px;
+}
+
+#div2 {
+    height: 40px;
+    width: 600px;
+    background-color: white;
+    margin: 10px auto auto auto;
+
+}
+
+#div2 input {
+    display: block;
+    margin: auto;
+    height: 38px;
+    width: 448px;
+    line-height: 38px;
+    border: 1px solid lightsteelblue;
+    float: left;
+
+background-color:rgba {
+    255, 255, 255, 0.8
+}
+
+;
+}
+#div2 a {
+    display: block;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    line-height: 40px;
+    background-color: aqua;
+    font-size: 20px;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

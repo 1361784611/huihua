@@ -1,0 +1,123 @@
+html,body{
+    width: 100%;
+    font-size: 14px;
+    background-color:powderblue;
+   /* background-image: url("../img/shijiazhuang/1.jpg.");
+    background-repeat:repeat;
+    background-clip: padding-box;*/
+
+}
+.articleBox{
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 800px;
+    background-color: #effaee;
+}
+
+.headerBox {
+    border-bottom: 1px dashed #DDD;
+}
+
+.headerBox h1 {
+    line-height: 70px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.mainBox{
+
+}
+.mainBox h2{
+    line-height: 50px;
+    font-size: 20px;
+    color: powderblue;
+}
+.mainBox p{
+    text-indent: 2em;
+    line-height: 35px;
+    font-size: 15px;
+    font-family: 华文宋体;
+}
+.mainBox p em {
+    color: #060707;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: underline;
+}
+.mainBox figure{
+    float: left;
+    margin: 0 15px 00;
+    width: 300px;
+}
+.mainBox figure img {
+    width: 100%;
+}
+.mainBox figure figcaption {
+    line-height: 20px;
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.mainBox strong {
+    color: orange;
+}
+
+.mainBox aside {
+    float: right;
+    margin: 10px 0 0 20px;
+    width: 300px;
+}
+
+.mainBox aside img {
+    width: 100%;
+}
+.mainBox aside figcaption {
+    line-height: 20px;
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+
+/*-- 适配手机--*/
+@media screen and (max-width: 800px) {
+    .articleBox {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .articleBox {
+        padding: 0 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainBox figure, .mainBox aside {
+        float: none;
+        margin: 10px auto;
+    }
+
+    .headerBox h1, .headerBox h2 {
+        text-overflow: ellipsis; /*ellipsis:超出一行的文字自动裁切,并且以三个省略号展示 clip:超出一行自动截取,没有省略号*/
+        white-space: nowrap; /*强制超出后不换行*/
+        overflow: hidden; /*溢出的内容隐藏*/
+        /*三句话一句话都不能少：超出一行的内容自动裁切，以省略号代替*/
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .mainBox figure, .mainBox aside {
+        width: auto;
+    }
+    .mainBox aside {
+        display: none;
+    }
+}
+
+
+
+
+
