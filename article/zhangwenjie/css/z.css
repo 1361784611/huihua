@@ -1,0 +1,237 @@
+﻿html, body {
+    width: 100%;
+    font-size: 16px;
+    background-color: #F4F4F4;
+}
+
+.articleBox {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 760px;
+    background-color: #FFFFFF;
+}
+
+/*heaer*/
+.headerBox {
+    border-bottom: 2px dashed #EEEEEE;
+}
+
+.headerBox h1 {
+    line-height: 50px;
+    text-align: center; /*设置文字的位置*/
+    /*font-weight: bold;   !* 设置文字是否加粗(不需要添加,默认是加粗的)*!*/
+    font-size: 22px;
+    border-bottom: 2px dashed #EEEEEE;
+}
+
+.headerBox p {
+    text-indent: 2cm; /*首行缩进2个汉字*/
+    line-height: 35px;
+}
+
+.headerBox p:hover {
+    color: teal;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.headerBox p em {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    color: lightseagreen;
+}
+
+.headerBox p a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*main*/
+.mainBox {
+
+}
+
+.mainBox audio {
+    float: right;
+    border: 1px dashed lightcoral;
+
+}
+
+.mainBox h2 {
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    color: skyblue;
+}
+
+.mainBox h3 {
+    line-height: 35px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    color: lightsalmon;
+}
+
+.mainBox figure {
+    float: left;
+    margin: 15px 15px 15px 0;
+    width: 300px;
+    overflow: hidden;
+}
+
+.mainBox figure a {
+    display: block;
+}
+
+.mainBox figure a img {
+    display: block;
+    width: 100%;
+    transition: .3s;
+}
+
+.mainBox figure a:hover img {
+    transform: scale(1.5);
+}
+
+.mainBox figure img {
+    width: 100%;
+    box-shadow: 8px 8px 10px black;
+}
+
+
+
+/*
+.mainBox figure .img1{
+    border-radius: 50%;
+}
+*/
+
+/*
+.mainBox figure .img2{
+    box-shadow:8px 8px 10px black;
+}
+*/
+
+.mainBox figure figcaption {
+    font-style: italic;
+    line-height: 20px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.mainBox p {
+    line-height: 35px;
+    text-indent: 2em;
+}
+
+.mainBox p em {
+    font-style: normal;
+    font-weight: bold;
+    color: coral;
+}
+
+.mainBox .pBox1:hover {
+    color: gold;
+    font-size: 14px;
+}
+
+.mainBox .pBox2:hover {
+    color: cadetblue;
+    font-size: 14px;
+}
+
+.mainBox .pBox3:hover {
+    color: cornflowerblue;
+    font-size: 14px;
+}
+
+.mainBox .pBox4:hover {
+    color: slateblue;
+    font-size: 14px;
+}
+
+.mainBox aside {
+    float: right;
+    margin: 15px 0 15px 15px;
+    width: 300px;
+
+}
+
+.mainBox aside img {
+    width: 100%;
+    border-radius: 25%;
+    /*border-bottom-left-radius: 25%;*/
+    box-shadow: 8px 8px 10px black;
+}
+
+/*移动端*/
+@media screen  and  (max-width: 815px) {
+    .articleBox {
+        width: auto;
+    }
+
+    .articleBox audio {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mainBox aside {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .articleBox {
+        padding: 0 8px;
+    }
+
+}
+
+@media screen and  (max-width: 540px) {
+    .mainBox figure, .mainBox aside {
+        float: none;
+
+    }
+
+    .headerBox h1 {
+        font-size: 18px;
+    }
+
+    .mainBox h2 {
+        font-size: 16px;
+    }
+
+    .mainBox h3 {
+        font-size: 15px;
+    }
+}
+
+/*
+@media screen and (max-width: 530px){
+       .mainBox p{
+
+           -webkit-font-smoothing: antialiased;
+       }
+}
+*/
+
+@media screen and (max-width: 325px) {
+    .headerBox h1, .mainBox h2, .mainBox h3 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .mainBox figure {
+        width: auto;
+    }
+
+    .mainBox figure figcaption {
+        visibility: hidden;
+    }
+}
+

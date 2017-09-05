@@ -1,0 +1,128 @@
+html {
+    font-size: 100px; /*在640的设计稿中：1REM=100PX*/
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*设置当前页面有且只有一屏幕：手机有多宽多高，我们的页面就多宽多高，也不会出现内容溢出或者滚动条*/
+}
+
+.main {
+    /*设置MAIN标签就是为了控制当前页面最大就是设计稿的宽度(640)，当设备的宽度超过640的时候，我们让其在设备的水平中间位置，左右两边留空白，不会让页面继续放大（京东和淘宝都是这样处理的）*/
+    margin: 0 auto;
+    max-width: 640px;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*--CUBE SECTION--*/
+.cube {
+    position: relative;
+    height: 100%;
+    background: url("../img/zf_cubeBg.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.cube ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -2.55rem 0 0 -2.55rem; /*让UL在CUBE正中间的位置*/
+    width: 5.1rem;
+    height: 5.1rem;
+}
+
+.cube ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cube ul li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cube .tip {
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    margin-left: -1.97rem;
+    width: 3.94rem;
+    height: .44rem;
+}
+
+/*实现3D魔方*/
+.cube {
+    /*实现3D效果：我们首先需要给当前元素所在的舞台设置视距(一般1000~2000)，模拟用户的视线距离舞台有一定的距离，防止一叶障目*/
+    perspective: 2000px;
+}
+
+.cube ul {
+    /*实现3D效果：我们需要让当前元素的变形效果为3D变形才可以*/
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    /*设置一个初始的旋转角度，让我们能看到3D魔方的效果*/
+    -webkit-transform: scale(0.6) rotateX(-30deg) rotateY(45deg);
+    transform: scale(0.6) rotateX(-30deg) rotateY(45deg);
+}
+
+.cube ul li:nth-child(1) {
+    /*
+        移动端为了兼容CSS3样式属性需要写两套
+        -webkit-transform
+        transform
+        顺序不能变，-webkit-在前，不带前缀的在后，但是设置的值是一样的
+    */
+    -webkit-transform: translateZ(2.55rem);
+    transform: translateZ(2.55rem);
+}
+
+.cube ul li:nth-child(2) {
+    -webkit-transform: translateZ(-2.55rem) rotateY(180deg);
+    transform: translateZ(-2.55rem) rotateY(180deg);
+}
+
+.cube ul li:nth-child(3) {
+    -webkit-transform: translateX(2.55rem) rotateY(90deg);
+    transform: translateX(2.55rem) rotateY(90deg);
+}
+
+.cube ul li:nth-child(4) {
+    -webkit-transform: translateX(-2.55rem) rotateY(-90deg);
+    transform: translateX(-2.55rem) rotateY(-90deg);
+}
+
+.cube ul li:nth-child(5) {
+    -webkit-transform: translateY(-2.55rem) rotateX(90deg);
+    transform: translateY(-2.55rem) rotateX(90deg);
+}
+
+.cube ul li:nth-child(6) {
+    -webkit-transform: translateY(2.55rem) rotateX(-90deg);
+    transform: translateY(2.55rem) rotateX(-90deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

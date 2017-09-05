@@ -1,0 +1,287 @@
+.dabeijing{
+    background-image: url("../img/背景.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px auto;
+    /*opacity: 0.1;*/
+}
+.box{
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.6);
+    border: 3px solid lightgrey;
+    padding: 10px;
+    width: 890px;
+    border-radius: 10px 10px 10px 10px;
+}/*整篇文章*/
+.navBox {
+    width: 100%;
+}/*导航栏*/
+.navBox ul{
+    float: right;
+
+}
+.navBox ul li{
+    float: left;
+    padding: 0 10px;
+    height: 32px;
+    line-height: 32px;
+}
+.navBox ul li a {
+    font-size: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.navBox ul li a.noClick {
+    text-decoration: none;
+    /*cursor: move; !*鼠标的形状：pointer小手(可点击的) move可移动的箭头  text可以选中文字的箭头  default默认的箭头*!*/
+    cursor: default;
+}
+.header{
+    background: url("../img/ma.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    /*width: 100%;*/
+    height: 300px;
+    margin:0 auto;
+    padding: 10px;
+    border-bottom: 2px solid rosybrown;
+}/*文章的头部*/
+.header h1{
+    padding: 20px 0px;
+    color: #fffd7c;
+    font-size: 60px;
+    font-family:华文楷体;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: antiquewhite;
+    text-align: right;
+}
+.clearfix:after {
+     display: block;
+     content: '';
+     clear: both;
+ }
+.todayBox {
+    margin: 0 auto;
+    width: 1710px;
+}
+.todayBox h2 {
+    margin-bottom: 15px;
+}
+.todayBox h2 a {
+    display: block;
+    padding-left: 46px;
+    height: 40px;
+    line-height: 40px;
+    background: url("img/toutiao/today.png") no-repeat left center;
+    background-size: 36px 36px;
+    font-size: 28px;
+    font-weight: normal;
+}
+.todayBox .newsList {
+
+}
+.todayBox .newsList li {
+    float: left;
+    margin-right: 5px;
+    width: 240px;
+}
+.todayBox .newsList li:nth-last-child(1) {
+    margin-right: 0;
+}
+.todayBox .newsList li a {
+    display: block;
+}
+.todayBox .newsList li a .top {
+    height: 160px;
+    position: relative;
+}
+.todayBox .newsList li a .top img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.todayBox .newsList li a .top .quick {
+    display: block;
+    width: 14px;
+    height: 18px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background: url("img/mark_quickplay.svg") no-repeat;
+    background-size: 100% 100%;
+}
+.todayBox .newsList li a .top span {
+    position: absolute;
+    left: 6px;
+    bottom: 6px;
+    padding: 0 4px 0 24px;
+    height: 20px;
+    line-height: 20px;
+    color: #FFF;
+    font-size: 12px;
+
+    background: url("img/toutiao/fire.svg") no-repeat 4px center #000;
+    background-size: 16px 16px;
+}
+.todayBox .newsList li a .bottom {
+    padding: 6px 40px 4px 4px;
+    height: 44px;
+    background: #F4F4F4;
+    position: relative;
+}
+.todayBox .newsList li a .bottom .play {
+    position: absolute;
+    right: 4px;
+    top: 9px;
+    width: 36px;
+    height: 36px;
+    background: url("img/toutiao/play.svg") no-repeat;
+    background-size: 100% 100%;
+}
+.todayBox .newsList li a:hover .bottom {
+    color: #FF6428;
+}
+.todayBox .newsList li a:hover .bottom .play {
+    background: url("img/toutiao/play-orange.svg") no-repeat;
+}
+.content{
+    margin-top: 10px;
+}/*文章的内容*/
+.content ul li h2 {
+    width: 100%;
+    color: darkorange;
+    font-size: 28px;
+}
+.content ul li p {
+    margin-bottom: 10px;
+    line-height: 35px;
+    font-size: 16px;
+}
+.content ul li p em{
+    color: firebrick;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bolder;
+
+}
+/*.content ul li h3{
+    float: right;
+}*/
+.content .figure {
+    float: right;
+    margin: 10px 20px 0 0;
+    width: 450px;
+
+}/*图片向右对齐较扁样式*/
+.content .figure img {
+    width: 100%;
+    height: 150px;
+
+}
+.content .figure .figcaption{
+    line-height: 20px;
+    color:darkred;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+.content .right{
+    float: right;
+    margin: 10px 20px 0 0;
+    width: 200px;
+    height: 200px;
+}/*图片向右对齐样式*/
+.content .right img{
+    width: 100%;
+    height: 180px;
+
+}
+.content .right .figcaption{
+    line-height: 20px;
+    color:darkred;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+.content .left{
+    float: left;
+    margin: 10px 20px 0 0;
+    width: 400px;
+}/*片向左对齐样式*/
+.content .left img{
+    width: 100%;
+    height: 350px;
+}
+.content .left .figcaption{
+    line-height: 20px;
+    color:darkred;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+.content .center {
+    float: inherit;
+    margin: 10px 20px 0 0;
+
+
+}/*图片整体居中样式*/
+.content .center img {
+    width: 100%;
+    height: 250px;
+
+}
+.content .center .figcaption{
+    line-height: 20px;
+    color:darkred;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 800px) {
+    .box{
+          width: auto;
+      }
+    .header h1{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 540px) {
+    .content{
+        padding: 0 8px;
+    }
+
+}
+@media screen and(max-width: 480px) {
+    .content figure{
+        float: none;
+        margin: 10px auto;
+    }
+
+}
+@media screen and(max-width: 300px) {
+    .content figure /*.box aside*/{
+        width: auto;
+    }
+    .content aside{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

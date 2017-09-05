@@ -1,0 +1,200 @@
+
+body{
+    width: 1900px;
+}
+.head{
+    height: 500px;
+    background: url("../img/yangyang/6.jpg");
+    background-size: cover;
+    padding: 20px 30px;
+    opacity: 0.8;
+}
+
+.head h1{
+    font-size: 48px;
+    color: gray;
+    line-height: 80px;
+}
+
+.head div{
+    text-indent: 2em;
+    width: 800px;
+    float: left;
+    font-size: 20px;
+    color: black;
+    line-height: 50px;
+}
+
+
+article{
+    background-image: url("../img/yangyang/99.jpg");
+    background-size: cover;
+}
+
+.main{
+    padding: 10px 50px;
+    margin: 0 auto;
+    width: 1500px;
+    background-color: azure;
+}
+
+.main section{
+    height: 250px;
+}
+
+.main section h4{
+    font-size: 24px;
+    line-height: 50px;
+    color: gray;
+}
+
+.main section img{
+    width: 150px;
+    height: 200px;
+}
+
+.main section ul li a {
+     position: relative;
+     text-indent: 3em;
+     width: 300px;
+     text-decoration: none;
+     display: block;
+     line-height: 30px;
+     float: left;
+     font-size: 18px;
+ }
+.main section ul li a .quick{
+    display: block;
+    position: absolute;
+    left: 85px;
+    top: 50px;
+    background: url("../img/yangyang/play-orange.svg") no-repeat;
+    width: 80px;
+    height: 80px;
+    background-size: 100%,100%;
+}
+
+.main section ul li a span{
+    display: block;
+    position: absolute;
+    left: 53px;
+    bottom: 8px;
+    background: grey;
+    color: white;
+    width: 150px;
+    height: 30px;
+    font-size: 10px;
+    text-indent: 3em;
+}
+
+div h2{
+    font-size: 28px;
+    border-bottom: 2px solid black ;
+    line-height: 60px;
+    margin: 20px;
+}
+
+div p{
+    font-size: 20px;
+    line-height: 40px;
+    text-indent: 2em;
+}
+
+div img{
+    float: right;
+    width: 250px;
+    height: 250px;
+}
+
+.div3 h3{
+    font-size: 24px;
+    color: lightslategray;
+}
+/*@media screen and (max-width: 2000px){
+    .head{
+        height: 250px;
+        padding: 10px 8px;
+        opacity: 0.8;
+    }
+
+    .head h1{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .head div{
+        text-indent: 1em;
+        width: 320px;
+        float: left;
+        font-size: 14px;
+        color: black;
+        line-height: 10px;
+    }
+    .main{
+        padding: 3px 5px;
+        width: 375px;
+    }
+
+    .main section{
+        height: 100px;
+    }
+
+    .main section h4{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .main section img{
+        display: block;
+        float: left;
+        width: 70px;
+        height: 100px;
+    }
+
+    .main section ul li a {
+        position: relative;
+        width: 73px;
+        line-height: 30px;
+
+    }
+    .main section ul li a .quick{
+        position: absolute;
+        left: 20px;
+        top: 25px;
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .main section ul li a span{
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 70px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    div h2{
+        font-size: 18px;
+        border-bottom: 1px solid black ;
+        line-height: 30px;
+        margin: 10px;
+    }
+
+    div p{
+        font-size: 14px;
+        line-height: 20px;
+        text-indent: 2em;
+    }
+
+    div img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .div3 h3{
+        font-size: 16px;
+    }
+}*/
+

@@ -1,0 +1,73 @@
+body {
+    background-image: url("../img/yangyang/99.jpg");
+    background-size: cover;
+}
+
+article {
+    margin: 0 auto;
+    padding: 20px 20px;
+    background: azure;
+    width: 900px;
+}
+
+article h1 {
+    font-size: 40px;
+    color: gray;
+    line-height: 50px;
+}
+
+article h2 {
+    font-size: 24px;
+    border-bottom: 2px solid black;
+    line-height: 40px;
+    margin: 20px;
+}
+
+article p {
+    font-size: 18px;
+    line-height: 30px;
+    text-indent: 2em;
+}
+
+article h3 {
+    font-size: 20px;
+    color: lightslategray;
+}
+
+.a {
+    float: right;
+    width: 250px;
+    height: 250px;
+}
+
+.b {
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+@media screen and (max-width: 1024px) {
+    article {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    article {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    article {
+        padding: 0 8px;
+    }
+}
+
+/*@media screen and (max-width: 480px) {
+       article h1, article h2 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+    }
+}*/

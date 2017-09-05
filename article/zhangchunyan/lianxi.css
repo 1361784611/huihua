@@ -1,0 +1,178 @@
+html, body {
+    width: 100%;
+   /* background:blanchedalmond;*/
+    background-image: url('img1/12.jpg');
+    background-size:100%;
+    color: #555;
+    font-size: 14px;
+}
+
+.article {
+    margin: 0 auto;
+    padding: 20px;
+    width: 900px;
+    background:oldlace;
+}
+.header {
+    border-bottom: 2px dashed #555555;
+}
+
+.header h1 {
+    line-height: 60px;
+    text-align: center;
+    font-size: 25px;
+    color:deeppink;
+}
+.main{
+    margin-top: 10px;
+}
+.main h1 {
+    color:deeppink;
+    line-height: 60px;
+    font-size: 20px;
+}
+.main h2{
+    color:hotpink;
+    line-height: 25px;
+    font-size: 20px;
+}
+.main h3{
+    text-align: right;
+    color:hotpink;
+    line-height: 20px;
+    font-size: 20px;
+}
+.main h4{
+    text-align:center;
+    color:palevioletred;
+    line-height: 20px;
+    font-size: 20px;
+}
+.main .newsList {
+
+}
+
+.main .newsList li {
+    float: left;
+    margin-right: 5px;
+    width: 221px;
+}
+
+.main .newsList li:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.main .newsList li a {
+    display: block;
+}
+/*.main .newsList li video{
+    margin:10px 30px 10px 10px ;
+    width:700px;
+}
+.main .newsList li video img{
+    width: 100%;
+}*/
+
+.main .newsList li a .top {
+    height: 160px;
+    position: relative;
+}
+
+.main .newsList li a .top img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main .newsList li a .top .quick {
+    display: block;
+    width: 14px;
+    height: 18px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-size: 100% 100%;
+}
+
+
+.main .newsList li a .bottom {
+    padding: 6px 40px 4px 4px;
+    height: 44px;
+    background: #F4F4F4;
+    position: relative;
+}
+
+.main .newsList li a .bottom .play {
+    position: absolute;
+    right: 4px;
+    top: 9px;
+    width: 36px;
+    height: 36px;
+    background: url("img1/play.svg") no-repeat;
+    background-size: 100% 100%;
+}
+.main .newsList li a .bottom h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.main .newsList li a:hover .bottom {
+    color:mediumpurple;
+}
+
+.main .newsList li a:hover .bottom .play {
+    background: url("img1/play-orange.svg") no-repeat;
+}
+.main p{
+    margin-bottom: 5px;
+    line-height: 25px;
+    text-indent: 2em;
+}
+.main aside{
+    float: right;
+    margin: 10px 0 0 20px;
+    width: 360px;
+}
+.main .aside img {
+    width: 100%;
+}
+.main figure{
+    float: left;
+    margin:10px 20px 0 0 ;
+    width:360px;
+}
+.main .figure img{
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .article {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .article {
+        padding: 8 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main figure, .main aside {
+        float: left;
+        margin: 0px auto;
+    }
+
+    .header h1 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .main figure, .main aside{
+        width: auto;
+    }
+}
