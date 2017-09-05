@@ -1,0 +1,160 @@
+html, body {
+    width: 100%;
+    font-size: 14px;
+    background-color: lightcyan;
+}
+
+.articlebox {
+    margin: 0 auto;
+    padding: 5px 100px;
+    width: 760px;
+    background-color: lightcyan;
+}
+
+.articlebox .box:hover {
+    transform: scale(1.5);
+}
+
+.headerbox {
+    border-bottom: 1px dashed #EEE;
+}
+
+.headerbox h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.headerbox h1 em {
+    font-style: normal;
+    font-weight: bold;
+    font-family: 微软雅黑;
+    color: orange;
+}
+
+.headerbox h2 em {
+    font-style: normal;
+    font-weight: bold;
+    font-family: 微软雅黑;
+    color: lightcoral;
+}
+
+.headerbox .box {
+
+}
+
+.headerbox .box img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.articlebox .headerbox  img:hover {
+    transform: scale(1.1);
+    transition: all 500ms ease-in-out;
+}
+
+.mainbox h2 em {
+    font-style: normal;
+    font-weight: bold;
+    font-family: 微软雅黑;
+    color: lightcoral;
+}
+
+.mainbox {
+
+}
+
+.mainbox h3 {
+    line-height: 30px;
+    font-size: 20px;
+
+}
+
+.mainbox h3 em {
+    font-style: normal;
+    font-weight: bold;
+    font-family: 微软雅黑;
+    color: coral;
+}
+
+.mainbox p {
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+.mainbox figure {
+
+    float: left;
+    margin: 0 50px 0 0;
+
+}
+.mainbox figure img .imgBox{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.figurebox1 {
+    float: right;
+
+}
+
+.figurebox2 {
+    float: left;
+
+}
+
+.figurebox3 {
+    float: left;
+    margin: 0 15px 0 0;
+    width: 200px;
+}
+
+.mainbox figure img {
+    width: 100%;
+    border-color: blue;
+
+}
+
+.mainbox figure figcaption {
+    font-size: 14px;
+    color: lightslategrey;
+    line-height: 20px;
+    font-weight: bold;
+
+}
+
+.mainbox.figurebox3.img_7683946 {
+    float: left;
+    margin: 0 50px 0 0;
+}
+
+@media screen and (max-width: 800px) {
+    .articlebox {
+        width: auto;
+        padding: 0 20px;
+    }
+}
+
+
+@media screen and ( max-width: 480px) {
+    .mainbox figure {
+        width: 100%;
+        float: none;
+        margin: 10px auto;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .mainbox figure {
+        width:100%
+    }
+
+}
+
+.headerbox h1 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

@@ -1,0 +1,312 @@
+html, body {
+    width: 100%;
+    background: url("../img/bgbg.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*顶部*/
+.box {
+    display: block;
+    margin: 0 auto;
+    width: 1064px;
+    /*    position: relative;*/
+}
+
+.box img {
+    display: block;
+    width: 100%;
+}
+
+.headline {
+    position: absolute;
+    float: left;
+    margin-top: 40px;
+    margin-left: 75px;
+    font-size: 30px;
+    font-family: 华文行楷;
+    color: steelblue;
+}
+
+audio {
+    float: right;
+}
+
+.nav {
+    margin-top: 80px;
+    margin-left: 50px;
+    position: absolute;
+    /*float: left;*/
+    color: blue;
+}
+
+.nav ul li {
+    float: left;
+    margin-left: 25px;
+
+    font-size: 18px;
+    font-family: 楷体;
+}
+
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.article {
+    float: left;
+    margin: 0 auto;
+    padding: 20px;
+    width: 760px;
+    background-color: lightgray;
+}
+
+/*header*/
+.header {
+    border-bottom: 2px lightslategrey dashed;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.header h1 {
+    line-height: 25px;
+    text-align: center;
+    font-size: 23px;
+}
+
+.header h4, audio {
+    text-align: right;
+    font-size: 14px;
+    color: lightslategray;
+
+}
+
+/*content*/
+.section1 {
+    background-color: lightsteelblue;
+    font-family: 楷体;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/*摘要*/
+
+.bg1 img {
+    padding-top: 5px;
+    width: 100%;
+}
+
+/*大配图*/
+
+.bg1 figcaption {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 15px;
+}
+
+.section2 p {
+    text-indent: 2em;
+    font-family: 方正书宋简体;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+/*正文*/
+
+.section2 h5 {
+    text-indent: 2em;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.section2 .poem {
+    font-style: italic;
+    font-family: 楷体;
+    font-size: 16px;
+    color: saddlebrown;
+}
+
+.figure1 {
+    float: right;
+    width: 300px;
+}
+
+.figure1 img {
+    display: block;
+    width: 100%;
+}
+
+.figure1 figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+
+}
+
+.figure2 {
+    float: left;
+    /*msrgin:5px 0 0 10px;*/
+    width: 300px;
+}
+
+/*小配图*/
+
+.figure2 img {
+    display: block;
+    width: 100%;
+}
+
+.figure2 figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.figure3 {
+    float: left;
+}
+
+.figure3 img {
+    display: block;
+    width: 100%;
+}
+
+.figure3 figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
+
+/*作者介绍*/
+.navBox {
+    float: left;
+    width: 260px;
+    margin-left: 4px;
+    background-color: lightblue;
+}
+
+.navBox h4 {
+    font-size: 17px;
+    color: teal;
+    padding: 5px 5px 10px;
+}
+
+.navBox .figure4 {
+    margin: 0 30px;
+}
+
+.navBox figure img {
+    border-radius: 50%;
+    display: block;
+    width: 100%;
+}
+
+
+
+
+.navBox .figure4 figcaption {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: 楷体;
+    color: darkslategrey;
+    font-size: 13px;
+}
+
+/*作者语录*/
+.navBox2 {
+    margin-top: 5px;
+    float: left;
+    width: 260px;
+    margin-left: 4px;
+    background-color: lightblue;
+}
+
+.navBox2 h4 {
+    font-size: 17px;
+    color: teal;
+    padding: 5px 5px 10px;
+    font-family: 楷体;
+}
+
+.navBox2 dl li {
+    font-family: 楷体;
+    font-size: 14px;
+    color: darkslategrey;
+    padding: 4px;
+}
+
+/*uc端设置*/
+@media screen and (max-width: 1064px) {
+    .box, .article, .navBox, .navBox2 {
+        width: auto;
+        float: none;
+    }
+
+    .article, .navBox, .navBox2 {
+        margin:0 auto;
+        padding:auto 5px;
+
+    }
+    .nav {
+        margin: 40px auto auto 0;
+    }
+    .headline{
+        margin:0 0 0 20px;
+    }
+    .picture img {
+        overflow: hidden;
+    }
+    .navBox figure img{
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/*能缩放*/
+
+@media screen and (max-width: 800px) {
+    .bg1 img, .figure1 img, .navBox figure img {
+        float: none;
+        margin: 10px auto;
+    }
+
+    .bg1 {
+        width: auto;
+    }
+}
+@media screen and (max-width: 500px) {
+   .picture{
+       display: none;
+   }
+    .article{
+        margin-top: 0;
+    }
+
+}
+@media screen and (max-width: 450px) {
+    .content figure {
+        float: none;
+        margin: 10px auto;
+    }
+
+    .header h1, .header h4 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+    }
+    .navBox figure img{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .content figure {
+        width: auto;
+    }
+}
