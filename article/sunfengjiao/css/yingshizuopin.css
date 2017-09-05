@@ -1,0 +1,29 @@
+.bodyBox{
+    background: url("../rebaimg/10.jpg") no-repeat center center;
+    background-size: cover;
+}
+.headerBox h1{
+    font-size: 50px;
+    font-family: Aparajita;
+    color: aquamarine;
+    text-align: center;
+    line-height: 10px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.mainBox h2{
+    font-size: 30px;
+    font-family: "Book Antiqua";
+    color: darksalmon;
+    text-align: left;
+    line-height: 10px;
+    letter-spacing: 5px;
+}
+.mainBox p{
+     font-size: 20px;
+    font-family: 微软雅黑;
+    color: crimson;
+    text-align: left;
+    line-height: 10px;
+    letter-spacing: 5px;
+}

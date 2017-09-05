@@ -1,0 +1,243 @@
+html, body {
+    width: 100%;
+    font-size:14px;
+    background-image: url("../img/yang34.jpg") ;
+
+
+}
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+audio{
+    position: relative;
+    /*left:430px;*/
+}
+.navBox {
+   background: rgba(128, 128, 128, 0.1);
+    width:100%;
+}
+
+.navBox ul {
+    float: right; /*给元素设置浮动后,不管是块状还是行内标签,它的默认宽度将不再是100%,而是跟随内容的宽度来改变*/
+    position: relative;
+    /*left:-250px;*/
+}
+
+.navBox ul li {
+    float: left;
+    padding: 0 10px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.navBox ul li a {
+    font-size: 15px;
+    color: gray;
+    text-decoration: underline;
+}
+
+.navBox ul li a.noClick {
+    text-decoration: none;
+    /*cursor: move; !*鼠标的形状：pointer小手(可点击的) move可移动的箭头  text可以选中文字的箭头  default默认的箭头*!*/
+    cursor: default;
+}
+h1{
+    font-size: 40px;
+    margin:5px 0;
+    font-family: 微软雅黑;
+
+}
+h2{
+    font-size: 25px;
+    margin:20px 0 10px 0;
+    font-family:仿宋;
+
+    text-decoration: underline;
+
+}
+.article1 {
+    margin: 20px auto;
+    padding:20px  30px  50px;
+    border-radius: 50px;
+    width: 1000px;
+    background-color: rgba(255,255,255,0.6);
+    letter-spacing: 2px;
+
+}
+.article1 p{
+    text-indent: 2em;
+    line-height: 2em;
+    color: darkslategrey;
+
+}
+
+.header1 {
+    margin: 20px auto;
+    padding:20px  30px ;
+    border-radius: 50px;
+    width: 1000px;
+    background-color: rgba(255,255,255,0.6);
+    letter-spacing: 2px;
+}
+.header1 img {
+    float: right;
+    margin: 0 15px 0 0;
+    height: 280px;;
+}
+.header1 p{
+    font-size: 16px;
+    text-indent: 2em;
+    line-height: 2em;
+    color: darkslategrey;
+
+}
+
+.main1 figure{
+    float: right;
+    margin: 2px 5px 0 10px;
+    width: 300px;
+}
+
+.main1 figure img {
+    width: 100%;
+}
+
+.zuopin1{
+    margin:5px auto;
+    width:900px;
+    padding-bottom: 10px;
+
+}
+.zuopin1 ul{
+    width:100%;
+    margin:0 auto;
+}
+.zuopin1 ul li{
+    float:left;
+    margin:15px 0 0 25px;
+    width: 200px;
+    height: 272px;
+    overflow: hidden;
+    border-radius: 20px;
+
+    position: relative;
+}
+.zuopin1 ul li a {
+    display: block;
+    height: 100%;
+}
+.zuopin1 ul li a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.zuopin1 ul li a span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    text-indent: 15px;
+    color: #FFF;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+dt{
+    display:block;
+    text-align: center;
+    margin-bottom:15px ;
+    font-size: 18px;
+
+}
+dd{
+    border-bottom:1px dashed black;
+}
+dd:nth-child(even){
+    background-color: lavender;
+}
+.pingjia figure{
+    height:220px;
+    width: 160px;
+    float: left;
+}
+.pingjia figure img{
+    display:block;
+    height:210px;
+    width: 147px;
+}
+.pingjia figure figcaption{
+
+
+}
+
+
+.div1{
+    width:50px;
+    height: 50px;
+    float: right;
+    /*position: fixed;*/
+    /*right: 200px;*/
+    /*bottom: 100px;*/
+    opacity: 0.7;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.6);
+}
+.div1 a{
+    width: 100%;
+
+}
+.div1 img{
+    width: 100%;
+}
+/*@media screen and (max-width: 1060px) {*/
+
+    /*.header1,.article1 ,.zuopin1,.navBox ul{*/
+        /*width: auto;*/
+    /*}*/
+/*}*/
+@media screen and (max-width: 1060px) {
+
+    .box1, .article1,.header1 ,.zuopin1{
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width: 930px) {
+    .header1,.article1 {
+        padding: 0 5px;
+
+        margin:0 5px;
+
+    }
+
+
+}
+@media screen and (max-width: 550px) {
+    .main1 figure{{
+        float: none;
+        margin: 10px 5px;
+        padding:0 auto;
+    }
+    @media screen and (max-width: 460px){
+        .zuopin1  ul li a img{
+
+        margin:0 auto;
+
+        }
+    }
+
+    @media screen and (max-width: 300px) {
+        .main1 figure, .pingjia figure {
+            width: auto;
+        }
+
+
+        }

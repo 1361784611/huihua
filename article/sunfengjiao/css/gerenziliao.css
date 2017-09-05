@@ -1,0 +1,31 @@
+.headerbox h1{
+    font-size: 50px;
+    color: crimson;
+    font-family: "Arial Narrow";
+    line-height: 5px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.mainbox figure img{
+    float:left;
+    margin: 15px 15px 0 0;
+    width: 500px;
+}
+.mainbox p{
+    font-size: 30px;
+    color: aqua;
+    font-family: "Angsana New";
+    line-height: 20px;
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-style: italic;
+}
+.bodybox{
+    margin: 0 auto;
+    font-size: 14px;
+    background-color: aliceblue;
+    background: url("../rebaimg/10.jpg") no-repeat center center ;
+    background-size: cover;
+}

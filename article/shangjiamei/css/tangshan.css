@@ -1,0 +1,100 @@
+html, body {
+    width: 100%;
+    font-size: 14px;
+    /*background-color: lightcoral;*/
+    background-image: url("../img/tangshan/bg.jpg");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+/**/
+.articleBox {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 760px;
+    background-color: lightcoral;
+    /*background-color: lightblue;*/
+}
+
+/*设置文章头部*/
+.headerBox {
+    border-bottom: 2px dashed #DDD;
+}
+
+.headerBox h1 {
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.headerBox audio {
+    display: none;
+}
+
+/*设置文章主体*/
+.mainBox {
+    margin-top: 10px;
+}
+
+.mainBox h2 {
+    line-height: 40px;
+    color: lightblue;
+    font-size: 23px;
+    text-align: center;
+}
+
+.mainBox p {
+    line-height: 35px;
+    font-size: 18px;
+}
+
+.mainBox .figure1 {
+    width: 300px;
+    float: left;
+    margin: 10px 20px 0 0;
+}
+
+.mainBox .figure2 {
+    width: 300px;
+    float: right;
+    margin: 10px 0 0 20px;
+}
+
+.mainBox figure img {
+    width: 100%;
+}
+
+.mainBox figure figcaption {
+    line-height: 20px;
+    font-size: 15px;
+    color: #DDD;
+}
+
+/*适配手机*/
+@media screen and (max-width: 800px) {
+    .articleBox {
+        width: auto;
+    }
+}
+@media screen and (max-width: 540px) {
+    .articleBox {
+        padding: 0 8px;
+    }
+}
+@media screen and (max-width: 480px){
+    .mainBox figures{
+        float: none;
+        margin: 10px auto;
+    }
+    .headerBox h1,.headerBox h2{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 300px){
+    .mainBox figure{
+        width: auto;
+        display: none;
+    }
+}

@@ -1,0 +1,187 @@
+html, body {
+    width: 100%;
+    background: burlywood;
+    color: black;
+    font-size: 14px;
+}
+
+article {
+    margin: 0 auto;
+    padding: 20px;
+    width: 1025px;
+    background: blanchedalmond;
+}
+
+header {
+    height: 450px;
+    background: url("../img/zhuti2.jpg") center center;
+    background-size: 100% 100%;
+    border-bottom: 1px dashed #ddd;
+}
+
+header h1 {
+    font-size: 50px;
+    text-align: center;
+    color: red;
+}
+
+header h1:hover {
+    transform: skew(45deg);
+    color: cornflowerblue;
+}
+
+.top h3 {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.top p {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    text-indent: 2em;
+    background: url("../img/zhuti1.jpg") no-repeat center center;
+}
+
+.middle h3 {
+    font-size: 20px;
+    color: darkviolet;
+}
+
+/*.middle ul li:hover{*/
+/*transform: scale(1.2);*/
+/*transition: all 1s linear 0ms;*/
+/*overflow: hidden;*/
+/*}*/
+.middle li {
+    float: left;
+    margin: 5px 0 0 5px;
+    overflow: hidden;
+}
+
+.middle li a {
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.middle li a img {
+    width: 100%;
+    height: 100%;
+}
+
+.middle li a img:hover {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    transform: scale(1.2);
+    transition: all 1s linear 0ms;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.middle li a span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 150px;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 10px;
+    color: cornflowerblue;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bottom h3 {
+    font-size: 20px;
+    color: deeppink;
+}
+
+.bottom p {
+    margin: 10px;
+    line-height: 20px;
+    font-size: 16px;
+    text-indent: 2em;
+}
+
+.bottom aside {
+    float: right;
+    margin: 0 10px;
+    width: 220px;
+}
+
+.bottom aside img {
+    width: 100%;
+    height: 250px;
+}
+
+.bottom .last img {
+    float: left;
+    height: 160px;
+}
+
+@media all and  (max-width: 1040px) {
+    article {
+        font-size: 12px;
+        width: auto;
+    }
+
+    h1, h3 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .middle li {
+        width: 19%;
+        margin: 5px 1% 0 0;
+        overflow: hidden;
+    }
+
+    .middle li a {
+        width: 100%;
+        height: 200px;
+    }
+
+    .middle li a img {
+        display: block;
+        /*height: auto;*/
+    }
+
+    /*.middle ul li {
+        width: 100%;
+    }
+
+    .middle ul li img {
+        width: 100%;
+    }
+
+    .bottom aside img {
+        width: 100%;
+    }*/
+}
+
+@media all and  (max-width: 220px) {
+    .bottom aside {
+        width: 100%;
+        float: none;
+    }
+}
+@media all and  (max-width: 660px){
+    .middle .clear{
+        display: none;
+    }
+}
+
+/*@media all and (max-width:  ){*/
+
+/*}*/
+
+
+
+
+
