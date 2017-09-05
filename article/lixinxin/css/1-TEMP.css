@@ -1,0 +1,195 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #FFFFFF;
+    /*overflow: hidden;*/
+    background: url("../img/back2.jpg") center center;
+    background-size: cover;
+}
+
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+/*头部部分*/
+.headerBox .navBox {
+    padding: 50px 30px;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+
+.headerBox .navBox h3 {
+    float: left;
+    font-weight: normal;
+    margin: 20px 8px 0 20px;
+    color: #FFFFFF;
+}
+
+.headerBox .navBox h1 {
+    font-size: 36px;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.headerBox .navBox h4 {
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.headerBox .navBox p {
+    display: block;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+/*====区域部分====1*/
+/*设置ul位置*/
+.sectionBox1 .tip {
+    margin: 160px auto 200px auto;
+    /* margin-top: 180px;
+     margin-left: 250px;
+     margin-bottom: 200px;*/
+    width: 600px;
+}
+
+.sectionBox1 .tip li {
+    float: left;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sectionBox1 .tip li img {
+    display: block;
+    width: 120px;
+    height: 90px;
+    margin: 5px 10px;
+
+}
+
+.sectionBox1 .tip li span {
+    display: block;
+    text-align: center;
+}
+
+.sectionBox1 .tip li img.onclick {
+    cursor: pointer;
+}
+
+.sectionBox1 .tip li span a {
+    color: #FFFFFF;
+}
+
+/*=====区域部分2======*/
+.sectionBox2 {
+
+}
+
+.sectionBox2 ul {
+    width: 820px;
+    height: 270px;
+    margin: 0 auto;
+}
+
+.sectionBox2 ul li:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.sectionBox2 ul li {
+    padding: 25px 10px;
+}
+
+.sectionBox2 ul li figure img {
+    float: left;
+    width: 250px;
+    height: 200px;
+    margin: 5px 20px 5px 5px;
+}
+
+.img:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: all 500ms linear 0ms;
+
+}
+
+.sectionBox2 ul li p {
+    text-indent: 2em;
+    line-height: 23px;
+}
+
+.sectionBox2 ul li p em {
+    font-size: 25px;
+    font-weight: normal;
+    color: lightcyan;
+}
+
+/*=====手机适配======*/
+@media screen and (max-width: 800px) {
+    .sectionBox1 .tip {
+        /*注：去掉原来ul设置的高度，并利用ul中图片的宽度计算出ul的宽度，再对外边距进行设置，以此来实现居中效果.以下为原ul设置样式代码：
+        .sectionBox1 .tip {
+              margin-top: 180px;
+              margin-left: 250px;
+              margin-bottom: 200px;
+              width: 600px;
+              }
+         */
+        width: 700px; /*以图片总体宽度作为ul最终的宽度,5个图片的宽度为5*140=700px*/
+        margin: 60px auto 60px auto; /*设置外边距实现居中*/
+    }
+
+    .sectionBox2 ul {
+        width: auto; /*当分辨率越来越小时都满足width小于800px的条件，所以只设置一次即可*/
+    }
+    .headerBox .navBox{
+        margin:0 auto;     /*导航外边距设置，将原始边距清零*/
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .sectionBox1 .tip {
+        width: 560px; /*4个图片的宽度为140*4=560px*/
+        margin: 60px auto 60px auto;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .sectionBox1 .tip {
+        width: 420px; /*3个图片的宽度为3*140=420px*/
+        margin: 60px auto 60px auto;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .sectionBox1 .tip {
+        width: 280px; /*2个图片的宽度为280px*/
+        margin: 60px auto 60px auto;
+    }
+
+    .sectionBox2 ul li figure img {
+        float: none; /*取消img的Float浮动*/
+        margin: 10px auto; /*上下边距为10像素 左右自动 设置图片处于居中位置*/
+        display: block; /*将img设置为标准的块状样式*/
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .sectionBox1 .tip {
+        width: 140px; /*只有一个图片时*/
+        margin: 60px auto 60px auto;
+    }
+}
+
+@media screen and (max-width: 265px) {
+    .headerBox .navBox h1 {
+        font-size: 23px; /*设置h1字体大小为23px*/
+    }
+}
+

@@ -1,0 +1,21 @@
+div
+{
+    width: 100px;
+    height: 100px;
+}
+.green
+{
+    background-color: aquamarine;
+}
+.yellow
+{
+    background-color: khaki;
+}
+.pink
+{
+    background-color: hotpink;
+}
+#blue
+{
+    background-color: aqua;
+}

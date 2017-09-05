@@ -1,0 +1,98 @@
+.html, body {
+    width: 100%;
+    background: #F4F4F4;
+    color: #555;
+    font-size: 14px;
+    background-color:black;
+}
+
+.article {
+    margin: 0 auto;
+    padding: 20px;
+    width: 760px;
+    background:#ffffff;
+}
+.header{
+    border-bottom: 1px dashed black;
+}
+.header{
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+.content{
+    margin-top: 10px;
+}
+.content h3{
+    line-height: 35px;
+    color: indianred;
+    font-size: 16px;
+}
+.figure{
+    width: 50px;
+    height: 30px;
+}
+.content p {
+    margin-bottom: 10px;
+    line-height: 35px;
+}
+.content figure {
+    float: left;
+    margin: 10px 20px 0 0;
+    width: 300px;
+}
+
+.content .figure img {
+    width: 50%;
+}
+#imgbox{
+    margin: 100px auto 0;
+    padding: 0 10px 10px 0;
+    width: 500px;
+    background: rgba(255,255,255,0.2);
+}
+#imgbox ul{
+
+}
+#imgbox li{
+    float: left;
+    margin: 10px 0 0 10px;
+    width: 200px;
+    height: 200px;
+}
+#imgbox li a{
+    display: block;
+    width: 180px;
+    height: 180px;
+    position:center;
+    overflow:hidden;
+}
+.img{
+    float: right;
+}
+.img1{
+    float:left;
+}
+@media screen and (max-width: 800px){
+    .article{
+        width: auto;
+    }
+}
+@media screen and (max-width: 540px) {
+    .article{
+        padding:  0 8px;
+    }
+
+}
+
+@media  screen and (max-width: 480px) {
+    .main figure,main aside{
+        float: none;
+        margin: 10px auto;
+    }
+    .header h1,header h2{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
