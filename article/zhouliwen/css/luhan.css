@@ -1,0 +1,90 @@
+html, body {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1) no-repeat center center;
+    color: #000;;
+    font-size: 20px;
+}
+.article{
+    width: 963px;
+    margin: 0 auto;
+    background-color: gainsboro;
+    padding: 10px 20px 10px 20px;
+}
+.h1Box{
+    font-size: 50px;
+    font-family: 楷体;
+    color: darkblue;
+    border-bottom: 1px dashed #EEE;
+}
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.navBox {
+}
+.navBox ul {
+    float:right;
+
+}
+.navBox ul li {
+    float: left;
+    padding: 0 10px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.navBox ul li a {
+    font-size: 20px;
+    color: darkslategray;
+    text-decoration: underline;
+}
+.navBox ul li a.noClick {
+    text-decoration: none;
+    cursor: default;
+}
+.main img{
+    float: left;
+    width:150px;
+
+}
+.main .img2{
+    float: right;
+}
+.footer img{
+width: 150px;
+    margin: 0 5px;
+}
+.footer .img1{
+    float: left;
+}
+@media screen and (max-width: 800px) {
+    .articleBox {
+        width: auto;
+    }
+}
+@media screen and (max-width: 480px) {
+    .mainBox figure, .mainBox aside {
+        float: none;
+        margin: 10px auto;
+    }
+
+    .headerBox h1, .headerBox h2 {
+        text-overflow: ellipsis; /*ellipsis:超出一行的文字自动裁切,并且以三个省略号展示 clip:超出一行自动截取,没有省略号*/
+        white-space: nowrap; /*强制超出后不换行*/
+        overflow: hidden; /*溢出的内容隐藏*/
+        /*三句话一句话都不能少：超出一行的内容自动裁切，以省略号代替*/
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .mainBox figure, .mainBox aside {
+        width: auto;
+    }
+
+    .mainBox aside {
+        display: none;
+    }
+}
+
