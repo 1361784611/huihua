@@ -1,10 +1,4 @@
 .idea
-
 modules
-
 node_modules
-*.mp3
 *.mp4
-audio
-file
-player
