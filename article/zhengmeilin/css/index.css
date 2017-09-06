@@ -68,6 +68,7 @@ html, body {
 }
 
 .mainBox .figure1:hover {
+    -webkit-transform: rotateY(360deg);
     transform: rotateY(360deg);
 
 }
@@ -82,6 +83,7 @@ html, body {
     float: right;
     margin: 0 0 0 15px;
     width: 300px;
+    -webkit-transition: all 0.5s linear 0ms;
     transition: all 0.5s linear 0ms;
 }
 
@@ -109,11 +111,13 @@ html, body {
     border-radius: 50%;
     width: 100%;
     height: 100%;
+    -webkit-transition: all 0.3s linear 0ms;
     transition: all 0.3s linear 0ms;
 }
 
 .mainBox div ul li img:hover {
-    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+      transform: scale(1.3);
 }
 
 @media all and (max-width: 800px) {

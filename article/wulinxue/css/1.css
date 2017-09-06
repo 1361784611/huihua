@@ -1,0 +1,32 @@
+
+div{
+    margin: 30px;
+    background-color:bisque;
+}
+#box{
+    background-color: beige;
+    width: 60%;
+    height: auto;
+    padding: auto;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    font-size:60px;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+main img{
+    float: right;
+    margin: 10px 20px;
+}
+footer img{
+    margin: 20px;
+    float: left;
+    width: 120px;
+    height: 167.4px;
+}

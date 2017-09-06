@@ -1,0 +1,53 @@
+html,body{
+	width:983px;
+	margin: 0 auto;
+	padding: inherit;
+}
+*{background:url(../img/u=683843088,829567032&fm=214&gp=0.jpg);}
+body p{
+	font-size: 24px;
+	font-family: 隶书;
+	color: yellowgreen;
+}
+body{
+     width:984px; height:800px;
+	 padding:2px; margin:0 auto;
+}
+.header{
+	width: auto;
+	height: 200px;
+	background: #ffffff;
+}
+.logo{
+	width: 300px;
+	height: 150px;
+	float: left;
+	background: #ffffff url(../img/logo.jpg) no-repeat left bottom;
+}
+.nav{
+	width:984px; clear:both;
+	height:40px; background:green;
+}
+.line{background:url(../img/line.png) no-repeat right center; font-family:宋体; font-size:24px}
+.center{
+	width:466px;height:200px;
+	background:#eeffdd; float:left;
+	border-right:5px solid #ffffff;
+}
+.picture{
+	width: 984px;
+	height: 400px;
+	background: #828282;
+}
+marquee img{width:200px;height:300px;border:2px #cc0066 ridge;}
+ul{list-style-type:none;}
+li{float:left;}
+.footer{
+	clear:both; width:984px;
+	height:80px; background:#f7f7f7;
+	text-align:center;
+}
+.footer p{margin-top:20px; text-align:center; color:#333333; font-family:楷体; font-size:14px; color:black;}
+@media screen and (max-width: 480px){
+
+}
