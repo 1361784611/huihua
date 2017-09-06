@@ -1,0 +1,44 @@
+body {
+    font-size: 20px;
+    font-style: normal;
+}
+h1 {
+    font-size: 22px;
+    color:dodgerblue;
+}
+
+.main img{
+    float: left;
+    width: 300px;
+}
+h3 {
+    font-size: 16px
+}
+
+ul, ol {
+    list-style: none
+}
+.navBox {
+    background: rgba(0, 0, 0, 0.3);
+}
+.navBox ul {
+    float: right; /*给元素设置浮动后,不管是块状还是行内标签,它的默认宽度将不再是100%,而是跟随内容的宽度来改变*/
+}
+
+.navBox ul li {
+    float: left;
+    padding: 0 10px;
+    height: 32px;
+    line-height: 32px;
+}
+.navBox ul li a {
+    font-size: 15px;
+    color:deepskyblue;
+    text-decoration: underline;
+}
+
+.navBox ul li a.noClick {
+    text-decoration: none;
+    /*cursor: move; !*鼠标的形状：pointer小手(可点击的) move可移动的箭头  text可以选中文字的箭头  default默认的箭头*!*/
+    cursor: default;
+}

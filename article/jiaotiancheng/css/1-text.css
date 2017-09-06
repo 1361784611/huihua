@@ -94,16 +94,44 @@ p{
     content: "";
     clear: both;
 }
+@media screen and (max-width: 850px) {
+    .contain {
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .contain {
+        padding: 5px 5px;
+    }
+    #contain img{
+        padding: 5px;
+    }
+}
+
+    @media screen and (max-width: 480px) {
+        .mainBox figure, .mainBox aside {
+            float: none;
+            margin: 10px auto;
+        }
 
 
 
+ h1,  h2 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 
+}
+}
 
+@media screen and (max-width: 270px) {
+    .img {
+        width: auto;
+    }
 
-
-
-
-
+}
 
 
 

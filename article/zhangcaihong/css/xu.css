@@ -1,0 +1,98 @@
+html,body{
+    width: 100%;
+    font-size: 14px;
+    background: #F4F4F4;
+
+}
+
+.articleBox{
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 760px;
+    background: #FFF;
+}
+
+.headerBox{
+    border-bottom: 1px dashed #EEE;
+
+}
+
+.headerBox h1{
+     text-align: center;
+     line-height: 50px;
+     font-size: 20px;
+    text-shadow: 0 0 20px red;
+}
+
+.mainBox{
+
+}
+
+.mainBox audio{
+    float: right;
+    border: 2px dashed lightcoral;
+}
+
+.mainBox h2{
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    color: lightseagreen;
+    text-shadow: 5px 5px 0 green, 7px 7px 0 lightseagreen;
+
+}
+
+.mainBox h3{
+    line-height: 35px;
+    font-size: 16px;
+    color: skyblue;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #fff
+}
+
+.mainBox p{
+    text-indent: 2em;
+    line-height: 35px;
+
+}
+
+.mainBox p em{
+    color: lightcoral;
+    text-decoration: underline;
+    text-shadow: 1px 1px rgba(197, 223, 248,0.8),2px 2px rgba(197, 223, 248,0.8),3px 3px rgba(197, 223, 248,0.8),4px 4px rgba(197, 223, 248,0.8),5px 5px rgba(197, 223, 248,0.8),6px 6px rgba(197, 223, 248,0.8);
+
+}
+
+.mainBox figure{
+    float: left;
+    margin: 15px 15px 15px 0;
+    width: 300px;
+
+}
+
+.mainBox figure img{
+    width: 100%;
+    box-shadow:8px 8px 10px black;
+}
+.mainBox figure .img1{
+
+    border-bottom-right-radius: 25%;
+    border-top-right-radius: 25%;
+}
+
+.mainBox figure .img2{
+    border: 1px solid lightblue;
+}
+
+.mainBox aside{
+    float: right;
+    margin: 15px 0 15px 15px;
+    width: 300px;
+
+}
+.mainBox aside img{
+    width: 100%;
+    border-radius: 30%;
+    box-shadow:8px 8px 10px black;
+}

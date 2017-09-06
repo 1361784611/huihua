@@ -1,0 +1,145 @@
+.bodyBox {
+    height: auto;
+    width: 760px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color:lemonchiffon;
+}
+
+.headerBox {
+    font-size: 50px;
+    height: 80px;
+    width: 760px;
+}
+
+.headerBox h1 {
+    font-size: 40px;
+    text-align: center;
+    text-shadow: -3px -3px red;
+}
+
+.mainBox .f1 {
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mainBox .f1 img{
+    height: 400px;
+}
+
+.mainBox figure img {
+    display: block;
+    width: 100%;
+}
+
+.mainBox figure figcaption {
+    color: tomato;
+    font-size: 14px;
+    text-align: center;
+}
+
+.p1Box {
+    color: orchid;
+}
+
+.h2box {
+    font-size: 24px;
+    color: deepskyblue;
+}
+
+.mainBox p {
+    font-size: 18px;
+    text-indent: 2em;
+}
+
+.mainBox .f2 {
+    height: 200px;
+    width: 300px;
+    float: right;
+    margin: 0 0 0 10px;
+}
+
+.mainBox .f3 {
+    height: 250px;
+    width: 300px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+
+.ziti {
+    font-size: 18px;
+}
+
+.mainBox video {
+    width: 760px;
+    margin: 0 auto;
+}
+
+@media screen  and (max-width: 860px) {
+    .bodyBox {
+        width: auto;
+    }
+
+    .headerBox {
+        width: auto;
+    }
+}
+
+@media screen  and (max-width: 760px) {
+    .bodyBox .mainBox video {
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 600px ) {
+    .bodyBox {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bodyBox .mainBox .f1, .bodyBox .mainBox .f2, .bodyBox .mainBox .f3 {
+        float: none;
+        width: 300px;
+        margin: 20px auto;
+    }
+}
+
+.headerBox h1 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 320px) {
+    .bodyBox .mainBox figure {
+        width: auto;
+    }
+
+    .bodyBox .mainBox #img1 {
+        width: auto;
+    }
+
+    .bodyBox .mainBox #img3 {
+        width: auto;
+    }
+
+    .bodyBox .mainBox .f1, .bodyBox .mainBox .f2, .bodyBox .mainBox .f3 {
+        width: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

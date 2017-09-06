@@ -1,6 +1,6 @@
-html,body{
+﻿html,body{
     width:100%;
-    background-color:lightcoral ;
+    background-color:lightcoral;
 }
 .box{
     margin:0 auto;
@@ -97,3 +97,4 @@ html,body{
         display:none;
     }
 }
+/*加一个注释而已*/

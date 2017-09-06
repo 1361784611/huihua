@@ -1,0 +1,83 @@
+body{
+    background-color: black ;
+
+}
+article{
+    /*外边距，当前盒子距离其他元素的距离*/
+    margin:0 auto;
+    /*内填充（内容距离盒子内边边框的空白区域）
+      目的：让内容文字和边框有点距离*/
+    padding: 50px;
+    width: 950px;
+    height:auto;
+    /*边框*/
+    border: 5px solid lightblue ;
+    background-color: lavender  ;
+}
+header{
+    border-style: none ;
+}
+h1{
+     text-align: center ;
+     font-size: 40px;
+     color: crimson ;
+}
+p{
+    text-align: left;
+    line-height:25px;
+    text-indent: 2em;
+}
+em{
+    color: brown ;
+}
+main{
+
+}
+h2{
+    text-indent: 1em;
+}
+h3{
+    text-indent: 2em;
+    line-height: 30px;
+    color: fuchsia  ;
+}
+figure{
+    margin: auto ;
+    padding: 20px;
+    width: 300px;
+    float: left ;
+}
+
+figure ,figcaption {
+    font-size: 10px;
+    color: lightseagreen ;
+}
+img{
+    display: block;
+    width: 302px;
+    height: 216px;
+}
+
+
+@media screen and (max-width: 1060px) {
+    article{
+        width:auto;
+        padding: 10px;
+        border: 5px;
+    }
+}
+@media screen and (max-width: 340px){
+    figure{
+        float: none;
+        margin: 5px auto;
+        padding: 1px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 302px) {
+    img{
+        max-width: 100%;
+    }
+
+}
+

@@ -1,0 +1,166 @@
+html, body {
+    width: 100%;
+    background: url("../img/lvyou/002.jpg") no-repeat;
+    background-size: cover;
+    color: #555;
+    font-size: 14px;
+}
+
+.article {
+    margin: 0 auto;
+    padding: 20px;
+    width: 850px;
+    background: oldlace;
+}
+
+.header {
+    border-bottom: 1px dashed #DDD;
+    height: 85px;
+}
+
+.header h1 {
+    line-height: 50px;
+    text-align: center;
+    font-size: 35px;
+    color: blue;
+    text-shadow: 4px 5px 1px black;
+}
+
+.select {
+    float: right;
+    margin: 10px;
+}
+
+.nav {
+    width: 850px;
+}
+
+.nav ul {
+    width: 850px;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 5px 34px;
+    height: 30px;
+    color: #555;
+    font-size: 20px;
+}
+
+.nav ul .lia a:hover {
+    color: orange;
+}
+
+.figurea {
+    margin: auto;
+}
+
+.figurea img {
+    width: 850px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.content h2 {
+    line-height: 30px;
+    text-align: left;
+    color: red;
+    font-size: 20px;
+}
+
+.content p {
+    margin-bottom: 10px;
+    line-height: 35px;
+    text-indent: 2em;
+    font-size: 15px;
+    color: black;
+}
+
+.content .figure {
+    float: left;
+    margin: 10px 20px 0 0;
+    width: 300px;
+    overflow: hidden;
+}
+
+.content .figure img {
+    width: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.content .figure img:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.content .aside {
+    float: right;
+    margin: 10px 0 0 20px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.content .aside img {
+    width: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.content .aside img:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.footer {
+    text-align: center;
+    border-top: 1px dashed black;
+}
+
+@media screen and (max-width: 850px) {
+    .article {
+        width: auto;
+    }
+
+    .nav {
+        width: auto;
+    }
+
+    .figurea img {
+        width: auto;
+    }
+    .nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .figurea {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .article {
+        padding: 8px;
+    }
+
+    .content p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .figure, .aside {
+        display: none;
+    }
+}
+

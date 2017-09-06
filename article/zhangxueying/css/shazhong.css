@@ -1,0 +1,332 @@
+html, body {
+    width: 100%;
+    height: 14px;
+}
+
+.articleBox {
+    width: 760px;
+    padding: 0 20px;
+    margin: 0 auto;
+    background-color: palegoldenrod;
+}
+
+.headerBox {
+    border-bottom: 1px dashed mediumslateblue;
+}
+
+.headerBox h1 {
+    color: mediumblue;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.headerBox h2 {
+    color: dodgerblue;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.mainBox {
+
+}
+
+/*三个校门变化*/
+.mainBox figure {
+    line-height: 50px;
+    margin: 15px 15px 0 0;
+    float: left;
+}
+
+.mainBox figure ul li img {
+    width: 230px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px 100px;
+}
+
+.mainBox figure img {
+    width: 300px;
+    float: right;
+
+}
+
+.mainBox figure figcaption {
+    font-size: 12px;
+    color: darkblue;
+    line-height: 20px;
+}
+
+.mainBox h3 {
+    font-size: 16px;
+    color: blueviolet;
+    font-weight: 300;
+}
+
+.mainBox p {
+    text-indent: 2em;
+    line-height: 35px;
+    margin: 0 20px;
+}
+
+.mainBox p em {
+    color: fuchsia;
+    font-weight: 200;
+    font-size: larger;
+}
+
+.mainBox aside {
+    float: right;
+    margin: 0 0 0 15px;
+    width: 300px;
+}
+
+.mainBox aside img {
+    width: 250px;
+}
+
+.mainBox aside figcaption {
+    font-size: 12px;
+    color: darkblue;
+    line-height: 20px;
+}
+
+/*哈静*/
+.figureBox img {
+    height: 200px;
+    padding: 10px 10px 10px 50px;
+}
+
+/*表头四幅图*/
+.imgBox {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 650px;
+    background: rgba(255, 255, 255, 0.4);
+    background-color: palegoldenrod;
+}
+
+.imgBox ul {
+}
+
+.imgBox ul li {
+    float: left;
+    margin: 10px 0 0 10px;
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    position: relative; /*让它成为SPAN的父级参照物*/
+}
+
+.imgBox ul li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.imgBox ul li span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /*
+      和FLOAT一样
+        设置POSITION后,会自动的把行内标签转换为块状标签
+        宽度不设置的时候不再是100%了,而是内容的宽度
+    */
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    text-indent: 15px;
+    color: #FFF;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.imgBox figcaption {
+    font-size: larger;
+    color: darkorchid;
+}
+
+.imageBox h4 {
+    font-size: medium;
+    color: darkviolet;
+}
+
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+/*设置条件*/
+@media screen and (max-width: 800px) {
+    .articleBox {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .articleBox {
+        width: auto;
+        padding: 0 5px;
+    }
+
+    .imgBox ul li {
+        float: left;
+        margin: 5px 80px;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        position: relative; /*让它成为SPAN的父级参照物*/
+    }
+
+    .imgBox ul li img {
+        padding: 10px 10px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .mainBox figure, .mainBox aside {
+        width: auto;
+    }
+
+    .articleBox {
+        width: auto;
+        padding: 5px;
+    }
+
+    .figureBox img {
+        width: auto;
+        height: 170px;
+        margin: 0 60px;
+    }
+
+    .figureBox figcaption {
+        float: inherit;
+    }
+
+    .imgBox {
+        width: auto;
+    }
+
+    .imgBox ul li {
+        margin: 5px 50px;
+        height: 150px;
+        overflow: hidden;
+
+        position: relative; /*让它成为SPAN的父级参照物*/
+    }
+
+    .imgBox img {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .articleBox {
+        width: auto;
+    }
+
+    .imgBox ul li, h4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .articleBox {
+        width: auto;
+        padding: 10px;
+    }
+
+    .mainBox figure, .mainBox aside {
+        width: auto;
+        float: none;
+        margin: 10px 60px;
+    }
+
+    .mainBox figure img {
+        width: 100%;
+        float: none;
+        margin: 0 50px 0 10px;
+    }
+
+    .mainBox figure figcaption {
+        float: inherit;
+    }
+
+    .figureBox {
+        width: auto;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .figureBox img {
+        display: block;
+        width: 100%;
+        margin: 0 50px;
+    }
+
+    @media screen and (max-width: 380px) {
+        .articleBox {
+            width: auto;
+            padding: 5px;
+        }
+    }
+    .mainBox figure, .mainBox aside {
+        width: auto;
+        float: none;
+        margin: 10px 60px;
+    }
+
+    .mainBox {
+        width: auto;
+    }
+
+    .mainBox figure img {
+        float: none;
+        margin: 0 50px 0 10px;
+    }
+
+    .figureBox {
+        margin: 20px;
+    }
+
+    .imgBox {
+        width: auto;
+    }
+
+    .imgBox ul li img {
+        width: 100%;
+        float: none;
+        margin: 0 50px 0 10px;
+    }
+
+    @media screen and (max-width: 371px) {
+        .articleBox {
+            width: auto;
+            padding: 0 1px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

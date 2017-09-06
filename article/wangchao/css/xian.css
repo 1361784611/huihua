@@ -1,0 +1,252 @@
+html,body{
+    margin:0 auto;
+    background-color :aliceblue ;
+    font-size: 20px;
+    width:100%;
+    font-family: 华文新魏;
+}
+.articleBox{
+    width: 800px;
+    font-size: 14px;
+    padding: 20px;
+    margin:0 auto;
+    background-color: burlywood ;
+}
+.headerBox {
+border-bottom: dashed ;
+}
+.headerBox h1{
+    font-family: 楷体 ;
+    font-size: 40px;
+    text-align: center ;
+    color: brown;
+    line-height: 50px;
+}
+.headerBox h2{
+    font-size: 20px;
+    text-align: center ;
+    font-weight: bold ;
+    color: chocolate ;
+    line-height: 50px;
+}
+.mainBox {
+}
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+ .imgBox {
+     height: 350px;
+    background: rgba(255,255,255,0.2);
+}
+.imgBox ul{
+    width: 800px;
+
+}
+.imgBox ul li {
+    padding: 10px 15px 15px 15px;
+    float:left;
+    width:235px;
+    height: 140px;
+    line-height: 10px;
+    text-align: center;
+    font-family: 华文楷体;
+    font-weight: bold;
+}
+.imgBox ul li a img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.imgBox ul li a span{
+    display: block;
+    padding: 10px 10px 10px 10px;
+    color: peru;
+   font-size: 20px ;
+    height: 35px;
+
+}
+.imgBox ul li a img:hover{
+    transform: scale(0.85);
+    transition: all 1s linear 0ms;
+}
+
+.mainBox h3,h4{
+    font-size: 18px;
+    line-height: 50px;
+    text-align: left;
+    color:chocolate  ;
+}
+.mainBox p{
+    font-size: 18px;
+    text-indent: 2em;
+    line-height: 40px;
+}
+.mainBox p em{
+    font-size: 25px;
+    font-style: normal ;
+    color: chocolate;
+}
+.mainBox .last em{
+    font-family: 华文行楷;
+}
+.figureBox1{
+    float: left ;
+    width:200px;
+    margin: 0 50px 0 0;
+}
+.figureBox2{
+    float: right ;
+    width:250px;
+    margin: 0 10px 0 30px;
+}
+.figureBox3{
+    float: right ;
+    width:200px;
+    margin:0 0 0 40px;
+}
+.figureBox4{
+    float: left ;
+    width:250px;
+    margin: 0 0 0 50px;
+}
+.figureBox1 img{
+    border-radius: 20%;
+
+}
+.figureBox2 img{
+    width: 100%;
+    margin: 0 auto;
+    transform:skew(10deg);
+    border-radius: 40px 40px 40px 40px;
+}
+.figureBox3 img{
+    width: 100%;
+    margin: 0 auto;
+    border-radius:50%;
+}
+.figureBox4 img{
+    width: 100%;
+    margin: 20px 0 10px -40px;
+   }
+.figureBox4 img:hover{
+    transform: scale(1.2);
+    transition: all 1s linear 0ms;
+}
+.figureBox2 img:hover{
+    transform: scale(0.85);
+    transition: all 1s linear 0ms;
+}
+@media screen and (max-width: 840px) {
+    .articleBox, .imgBox{
+        width: auto;
+    }
+    .imgBox{
+
+        height: 550px;
+    }
+    .imgBox ul li{
+        padding: 15px 50px 20px 50px;
+        float:left;
+        width:250px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 720px){
+    .imgBox{
+
+        height:1450px;
+    }
+    .imgBox ul li{
+        margin:  auto;
+        padding:15px 10px 10px 15px;
+        float:left;
+        width:450px;
+        height: 200px;
+
+    }
+}
+@media screen and (max-width: 510px){
+    .imgBox ul li{
+        margin:  auto;
+        padding:15px 100px 20px 15px;
+        width:300px;
+        height: 200px;
+
+    }
+    .figureBox1,.figureBox2,.figureBox3,.figureBox4 {
+        float: none;
+
+    }
+    .figureBox1 img,.figureBox2 img,.figureBox3 img,.figureBox4 img{
+        border-radius:50%;
+        transform:skew(0deg);
+    }
+}
+@media screen and (max-width: 360px){
+    .figureBox1,.figureBox2,.figureBox3,.figureBox4 {
+        float: none;
+        display: none;
+    }
+    .imgBox{
+
+        height:960px;
+    }
+    .imgBox ul li{
+        margin:  15px 100px 2px 15px;
+        padding:15px 100px 5px 15px;
+        width:200px;
+        height: 120px;
+
+    }
+}
+@media screen and (max-width: 280px){
+        .imgBox{
+
+            height: 258px;
+        }
+        .imgBox ul li{
+            width:90px;
+            height: 10px;
+            float: none;
+        }
+        .imgBox ul li a img{
+
+            display: none ;
+            float: none;
+
+        }
+
+        .imgBox ul li a span{
+            display: block;
+            margin: 1px -50px 5px -95px;
+            padding: 1px 5px 5px 10px;
+        }
+
+    }
+@media screen and (max-width: 225px){
+    .headerBox h1,.headerBox h2 ,.mainBox h3,h4{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .articleBox h1{
+        font-size: 20px;
+    }
+    .articleBox p{
+        font-size:15px;
+    }
+    .articleBox .last em {
+        font-size:20px;
+    }
+    .imgBox ul li a span{
+        font-size:15px;
+    }
+}
+
+
+
+
+

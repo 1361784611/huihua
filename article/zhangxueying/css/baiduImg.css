@@ -1,0 +1,158 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /*让当前的HTML页面和浏览器窗口保持一致，而且禁止出现滚动条 =>`当前页面有且只有一屏幕`*/
+    background: url("../img/timg.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.navBox {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/*.navBox:after { !*以后只要子元素中出现了浮动，那么我们就给父元素设置这个样式，以此来清除浮动的BUG*!
+    display: block;
+    content: '';
+    clear: both;
+}*/
+
+.navBox ul {
+    float: right; /*给元素设置浮动后,不管是块状还是行内标签,它的默认宽度将不再是100%,而是跟随内容的宽度来改变*/
+}
+
+.navBox ul li {
+    float: left;
+    padding: 0 10px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.navBox ul li a {
+    font-size: 15px;
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.navBox ul li a.noClick {
+    text-decoration: none;
+    /*cursor: move; !*鼠标的形状：pointer小手(可点击的) move可移动的箭头  text可以选中文字的箭头  default默认的箭头*!*/
+    cursor: default;
+}
+
+.searchBox {
+    margin: 25px auto 40px auto;
+    width: 624px;
+}
+
+.searchBox img {
+    display: block; /*IMG标签MARGIN左右是AUTO默认对其没作用,只有把它变为标准的块状标签才有作用（项目中我们一般都会设置IMG的DISPLAY='BLOCK'）*/
+    margin: 0 auto;
+    width: 244px;
+    height: 105px;
+}
+
+.searchBox div {
+    margin-top: 10px;
+}
+
+.searchBox div input {
+    float: left;
+    padding: 0 5px;
+    width: 508px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #EEE;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.searchBox div a {
+    float: left; /*设置为浮动的元素会自动的转化为块状标签(不需要再重新的些DISPLAY='BLOCK')*/
+    width: 104px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #38F;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.searchBox div a:hover {
+    background: #317EF3;
+}
+
+.imgBox {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 810px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.imgBox ul {
+
+}
+
+.imgBox ul li {
+    float: left;
+    margin: 10px 0 0 10px;
+    width: 150px;
+    height: 135px;
+    overflow: hidden;
+
+    position: relative; /*让它成为SPAN的父级参照物*/
+}
+
+.imgBox ul li a {
+    display: block;
+    height: 100%;
+}
+
+.imgBox ul li a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.imgBox ul li a span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /*
+      和FLOAT一样
+        设置POSITION后,会自动的把行内标签转换为块状标签
+        宽度不设置的时候不再是100%了,而是内容的宽度
+    */
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    text-indent: 15px;
+    color: #FFF;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
