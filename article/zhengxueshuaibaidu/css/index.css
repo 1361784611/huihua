@@ -1,0 +1,167 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    background: url("../img/tupian/0.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+#nav {
+    height: 36px;
+}
+
+#nav ul {
+    float: right;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    padding: 0 10px;
+    height: 36px;
+    line-height: 36px;
+
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#nav li a.no {
+    text-decoration: none;
+}
+
+#nav li a.line {
+    color: #999;
+}
+
+#nav li a:hover {
+
+}
+
+
+h1 {
+    margin: 50px auto 0;
+    width: 244px;
+    height: 105px;
+
+
+
+
+}
+
+h1 img {
+
+    width: 100%;
+    height: 100%;
+}
+
+
+#search {
+    margin: 10px auto 0;
+    width: 644px;
+}
+
+#search input {
+    float: left;
+
+    padding: 0 10px;
+    width: 488px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #DDD;
+
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+#search div {
+    float: left;
+    width: 104px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFF;
+    font-size: 16px;
+    background: #38F;
+    cursor: pointer;
+}
+
+#search div:hover {
+    background: orange;
+}
+
+#imgBox {
+    margin: 50px auto 0;
+    padding: 0 10px 10px 0;
+    width: 850px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#imgBox ul {}
+
+
+#imgBox li {
+    float: left;
+    margin: 10px 0 0 10px;
+
+}
+
+#imgBox li a {
+    display: block;
+    width: 160px;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+}
+
+#imgBox li a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#imgBox li a span {
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    text-indent: 10px;
+
+    color: #F4F4F4;
+    font-size: 13px;
+    font-weight: bold;
+
+
+    background: -webkit-linear-gradient(top, rgba(121, 104, 72, 0), rgba(121, 104, 72, 1));
+    background: linear-gradient(top, rgba(121, 104, 72, 0), rgba(121, 104, 72, 1));
+
+}
+
+#imgBox li a:hover img {
+
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+
+audio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
