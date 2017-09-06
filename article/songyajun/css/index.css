@@ -1,0 +1,122 @@
+body{
+    background: url("../img/background3.jpg");
+    font-family: 楷体;
+}
+.articleBox{
+    width: 800px;
+    height: auto;
+    margin:10px auto 50px auto;
+}
+.headerBox{
+    height: 250px;
+    width: 100%;
+    background: url("../img/timg.jpg") no-repeat center center rgb(255,255,255);
+    opacity: 0.8;
+    font-family: 华文楷体;
+    text-align: left;
+    border-radius: 10px 10px 10px 10px;
+    /*border-top-left-radius: 10px;*/
+    /* , border-bottom-right-radius , border-bottom-left-radius , border-top-left-radius*/
+}
+.headerBox h1{
+    line-height: 220px;
+    text-indent: 1em;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.headerBox audio{
+    margin-left: 3px;
+    opacity: 0.7;
+}
+.mainBox{
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgba(255,255,255,0.6);
+    margin:10px auto auto auto;
+}
+.mainBox h2{
+    line-height: 50px;
+    text-indent: 1em;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.mainBox h3{
+    line-height: 25px;
+    text-indent: 0.5em;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.mainBox p{
+    font-family: 楷体;
+    font-size: 22px;
+    text-indent: 2em;
+    line-height: 28px;
+    margin: auto 15px;
+}
+.mainBox #one {
+    float: left;
+    margin: 5px 25px 0 10px;
+    width: 200px;
+}
+
+.mainBox #two{
+    float: right;
+    margin: 5px 0 0 25px;
+    width:350px;
+}
+
+.mainBox #three {
+    float: left;
+    margin: 5px 25px 0 10px;
+    width: 350px;
+}
+.mainBox figure img {
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.mainBox figure figcaption {
+    font-size: 12px;
+    color: #999;
+    line-height: 20px;
+}
+.mainBox li{
+    font-size: 18px;
+    padding-left: 5px;
+}
+.mainBox li:nth-child(odd){
+    background-color: gainsboro;
+}
+@media screen and (max-width: 800px) {
+    .articleBox {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .articleBox {
+        padding: 0 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainBox figure{
+        float: none;
+        margin: 10px auto;
+    }
+    .headerBox h1{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .mainBox figure{
+        width: auto;
+    }
+    .mainBox h2{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,148 @@
+html,body{
+    width:100%;
+    font-size: 15px;
+    background-color: darksalmon ;
+}
+.articleBox{
+    margin: 0 auto;
+    padding:5px 100px;
+    width:800px;
+    background-color:antiquewhite;
+
+}
+.headerBox{
+
+}
+.headerBox h1{
+    font-size: 35px;
+    line-height: 50px;
+    text-align: left;
+    font-weight:normal;
+    color: orange ;
+}
+.mainBox{
+}
+.diBox{
+    display: inline;
+}
+.diBox:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.diBox{
+    float: left;
+}
+.dBox1{
+    width: 350px;
+    float: left;
+}
+.dBox2{
+    width: 300px;
+    float: right;
+}
+
+
+
+
+.mainBox figure{
+    float:left;
+    margin:5px 5px 15px 15px ;
+    width:250px;
+}
+
+.mainBox figure img {
+    width: 200px;
+}
+
+.mainBox p{
+    text-indent: 2em;
+    margin:5px 5px 5px 15px ;
+    line-height: 25px;
+    font-size: 13px;
+}
+#pBox{
+    width:400px;
+
+    float:right;
+    text-indent: 2em;
+    line-height: 20px;
+}
+.dBox1  {
+
+    width: 300px;
+    font-size: 12px;
+    text-indent: 2em;
+    line-height: 25px;
+    text-align: left;
+}
+.dBox2  {
+    width: 300px;
+    font-size: 12px;
+    text-indent: 2em;
+    line-height: 25px;
+    text-align: left;
+    margin:0 15px 30px 120px ;
+
+}
+h2{
+    font-size: 27px;
+    line-height: 50px;
+    text-align: left;
+    font-weight:normal;
+    color:blueviolet;
+}
+.ulBox:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.ulBox{
+    float: left;
+}
+.ulBox li{
+    float: left;
+}
+
+.ulBox li img {
+    width: 150px;
+}
+.ulBox2:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.ulBox2{
+    float: left;
+}
+.ulBox2 li{
+    float: left;
+}
+
+.ulBox2 li img {
+    width: 150px;
+}
+.sceBox h3{
+    font-size: 28px;
+    line-height: 50px;
+    text-align: left;
+    font-weight:normal;
+    color: blueviolet;
+}
+.sceBox p {
+    text-indent: 2em;
+    line-height: 30px;
+}
+.fiBox{
+    float:left;
+    margin:10px 0 15px 15px ;
+    width:50px;
+    height: 60px;}
+.sceBox figure{
+    float:right;
+    margin:10px 0 15px 15px ;
+    width:150px;
+}
+
+
+

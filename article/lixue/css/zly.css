@@ -1,0 +1,82 @@
+html,body{
+    width:100%;
+    font-size: 15px;
+    background-color: darksalmon ;
+}
+.articleBox{
+    margin: 0 auto;
+    padding:5px 50px;
+    width:800px;
+    background-color:antiquewhite;
+}
+.headerBox{
+}
+.headerBox h1{
+    font-size: 35px;
+    line-height: 50px;
+    text-align: left;
+  /*  font-weight:normal;*/
+    color: orange ;
+}
+.mainBox{
+}
+.dBox figure{
+
+}
+.dBox img{
+    width:200px;
+    float: left;
+    margin: 0 50px;
+}
+p{  text-indent: 2em;}
+.dBox p{
+    /*font-size: 30px;*/
+    width:450px;
+    float: left;
+    margin:0 50px;
+}
+h2{
+    font-size: 27px;
+    line-height: 50px;
+    text-align: left;
+    font-weight:normal;
+    color:blueviolet;
+}
+h3{
+    font-size: 28px;
+    line-height: 50px;
+    text-align: left;
+    font-weight:normal;
+    color: blueviolet;
+}
+.h3Box img {
+    float: right;
+    width:150px;
+}
+.divBox img{
+    display: block;
+    margin: 0 auto;
+     width:100%;
+}
+@media screen and ( max-width: 860px) {
+    .articleBox{
+        width:auto;
+    }
+}
+@media screen and ( max-width: 850px) {
+    .articleBox{
+        width:auto;
+        padding:0 8px;
+    }
+    .mainBox figure{
+    float: none;
+    margin:10px auto;
+   }
+}
+@media screen and ( max-width: 720px) {
+    .dBox figure,.figBox img,.h3Box img,.imgBox{
+        width:auto;
+        margin:0 auto;
+    }
+
+}
