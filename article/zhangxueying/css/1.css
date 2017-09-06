@@ -1,0 +1,12 @@
+.yellow,#last,#hh{
+    width:100px;
+    height:100px;
+    background-color: yellow;
+    font-size: larger;
+}
+#last{
+    background-color: cyan;
+}
+#hh{
+    background-color: aquamarine;
+}
