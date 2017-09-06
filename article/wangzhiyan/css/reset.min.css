@@ -1,0 +1,72 @@
+html, body{
+    width: 100%;
+    background-color: #a0a0a0;
+    color: #555;
+    font-size: 14px;
+}
+.article{
+    margin: 0 auto;
+    padding: 20px;
+    width: 760px;
+    background-color: darkgrey;
+}
+
+.header{
+    border-bottom: 2px dashed black;
+}
+
+.header h1{
+    line-height: 50px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.header h2{
+    line-height: 70px;
+    text-align: center;
+    font-size: 30px;
+    color: lightgreen;
+}
+
+.content{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-size: 13px;
+    text-indent: 26px;
+}
+
+.content strong {
+    color: lightslategray;
+    font-style: italic;
+    font-size: 20px;
+}
+.img{
+    float: left;
+    width: 490px;
+    height: 380px;
+}
+
+.content .figure {
+    float: left;
+    margin: auto;
+    width: 300px;
+    height: auto;
+}
+
+.content .figure img {
+    width: 100%;
+}
+
+.content .figure figcaption {
+    line-height: 20px;
+    color: sandybrown;
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+
+
+
+

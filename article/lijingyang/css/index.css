@@ -1,0 +1,65 @@
+html{
+    font-size: 100px;
+}
+html, body {
+    width: 100%;
+    background-color: #F4F4F4;
+}
+.articleBox {
+    margin: 0 auto;
+    padding: 0 0.2rem;
+    width: 7.6rem;
+    background-color: #FFF;
+}
+
+.headerBox {
+    border-bottom: 0.01rem dashed #EEE;
+}
+
+.headerBox h1 {
+    line-height: 0.5rem;
+    text-align: center;
+    font-size: 0.2rem;
+}
+
+.headerBox h2 {
+    line-height: 0.5rem;
+    text-align: center;
+    font-size: 0.18rem;
+    color: orange;
+    font-weight: normal;
+}
+
+.mainBox {
+
+}
+
+
+
+.mainBox p {
+    text-indent: 2em;
+    line-height: 0.35rem;
+}
+
+.mainBox p em {
+    color: orange;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.mainBox figure {
+    float: left;
+    margin: 0 0.15rem 0 0;
+    width: 3rem;
+}
+
+.mainBox figure img {
+    width: 100%;
+}
+
+.mainBox figure figcaption {
+    font-size: 0.12rem;
+    color: #999;
+    line-height: 0.2rem;
+}
+

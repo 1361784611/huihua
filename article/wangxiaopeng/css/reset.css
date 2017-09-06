@@ -1,0 +1,61 @@
+html, body{
+    width: 100%;
+    background-color: #a0a0a0;
+    color: #555;
+    font-size: 14px;
+}
+
+html {font-size: 100px;
+
+
+}
+.article{
+
+    margin: 0 auto;
+    padding: 0.2rem;
+    width: 7.6rem;
+    background-color: darkgrey;
+}
+
+.header{
+    border-bottom: 0.02rem dashed black;
+}
+
+.header h1{
+    line-height: 0.5rem;
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+.header h2{
+    line-height: 0.7rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color:#a0a0a0;
+}
+
+.content{
+    margin-top: 0.15rem;
+    margin-bottom:0.1rem;
+    line-height: 0.3rem;
+    font-size: 0.13rem;
+    text-indent: 0.26rem;
+}
+
+.content strong {
+    color: lightslategray;
+    font-style: italic;
+    font-size: 0.2rem;
+}
+.img{
+    float: left;
+    width: 4.9rem;
+    height: 3.8rem;
+}
+
+
+
+
+
+
+
